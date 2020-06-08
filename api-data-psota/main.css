@@ -1,0 +1,125 @@
+body
+{
+	background-color: #2F3336;
+	color: #efefef;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+.logo
+{
+	font-size: 50px;
+	font-weight: 700;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	text-align: center;
+	color: #ddd;
+}
+.navbar
+{
+	width: 100%;
+	background-color: #00CED1;
+	text-align: center;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0px;
+
+}
+.nav-link, .navbar-brand
+{
+	color: #ddd;
+	text-decoration: none;
+}
+.dropdown-menu
+{
+	background-color: #00CED1;
+	border: none;
+}
+.dropdown-item
+{
+	color: #eee;
+	background-color: #00CED1;
+}
+.dropdown-item:hover
+{
+	color: #fff;
+	background-color: #00CED1;
+}
+
+h1
+{
+	color: #ddd;
+	font-size: 36px;
+	font-weight: 700;
+	letter-spacing: 2px;
+	margin: 30px;
+}
+.zwierzaki
+{
+	text-align: center;
+}
+.zwierzaki img
+{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+.overlay
+{
+	position: relative;
+	height: auto;
+
+}
+.overlay .link
+{
+	position: absolute;
+	width: 100%;
+	color: #fff;
+	left:0;
+	bottom: 0;
+	background-color: #111;
+	text-align: center;
+	opacity: 0;
+	transition: opacity 0.5s ease-in-out;
+}
+.overlay .link p
+{
+	color: #fff;
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.overlay:hover .link
+{
+	opacity: 0.8;
+}
+a:link
+{
+	color: #fff;
+	text-decoration: none;
+}
+.zwierzaki p
+{
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+@media (max-width: 575px)
+{
+	.zwierzaki img
+	{
+		display: block;
+		width: 100%;
+		height: auto;
+		padding: 10px 0;
+	}
+	.overlay .link
+	{
+		position: absolute;
+		width: 100%;
+		color: #fff;
+		left:0;
+		bottom: 10px;
+		background-color: #111;
+		text-align: center;
+		opacity: 0;
+		transition: opacity 0.5s ease-in-out;
+}
