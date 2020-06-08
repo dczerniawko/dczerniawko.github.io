@@ -9,14 +9,13 @@ body
 {
 	font-size: 50px;
 	font-weight: 700;
-	margin-top: 30px;
-	margin-bottom: 30px;
+	margin-top: 10px;
+	margin-bottom: 20px;
 	text-align: center;
 	color: #ddd;
 }
 .navbar
 {
-	width: 100%;
 	background-color: #00CED1;
 	text-align: center;
 	position: -webkit-sticky;
@@ -44,7 +43,6 @@ body
 	color: #fff;
 	background-color: #00CED1;
 }
-
 h1
 {
 	color: #ddd;
@@ -62,6 +60,7 @@ h1
 	display: block;
 	width: 100%;
 	height: auto;
+	margin-bottom: 50px;
 }
 .overlay
 {
@@ -85,8 +84,6 @@ h1
 {
 	color: #fff;
 	text-align: center;
-	margin-top: 15px;
-	margin-bottom: 15px;
 }
 .overlay:hover .link
 {
@@ -100,26 +97,53 @@ a:link
 .zwierzaki p
 {
 	margin-top: 10px;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 }
-@media (max-width: 575px)
-{
-	.zwierzaki img
-	{
+@media (max-width: 575px) {
+	.zwierzaki img {
 		display: block;
 		width: 100%;
 		height: auto;
 		padding: 10px 0;
 	}
-	.overlay .link
-	{
+
+	.overlay .link {
 		position: absolute;
 		width: 100%;
 		color: #fff;
-		left:0;
+		left: 0;
 		bottom: 10px;
 		background-color: #111;
 		text-align: center;
 		opacity: 0;
 		transition: opacity 0.5s ease-in-out;
+	}
+}
+.icon
+{
+	font-size: 20px;
+	display: inline;
+}
+.fb:hover
+{
+	background-color: #4668b3;
+}
+.yt:hover
+{
+	background-color: #d94348;
+}
+.tw:hover
+{
+	background-color: #3095d3;
+}
+.in:hover
+{
+	background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+footer
+{
+	background-color: #222222;
+	font-size: 14px;
+	padding: 5px;
 }
