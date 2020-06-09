@@ -3,7 +3,6 @@ body
 	background-color: #2F3336;
 	color: #efefef;
     font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
 }
 .logo
 {
@@ -123,6 +122,7 @@ a:link
 {
 	font-size: 20px;
 	display: inline;
+	margin-left: 5px;
 }
 .fb:hover
 {
@@ -144,6 +144,15 @@ a:link
 footer
 {
 	background-color: #222222;
-	font-size: 14px;
-	padding: 5px;
+	font-size: 12px;
+	padding: 8px;
+}
+.footer
+{
+	margin-top: 5px;
+}
+a.sociallink
+{
+	color: #ddd;
+	text-decoration: none;
 }
