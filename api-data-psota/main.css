@@ -117,6 +117,27 @@ a:link
 		opacity: 0;
 		transition: opacity 0.5s ease-in-out;
 	}
+	.wpis
+	{
+		margin: 40px 20px;
+		text-align: left;
+		font-size: 15px;
+	}
+
+	.float-left
+	{
+		max-width: 50%;
+	}
+
+	.blockquote
+	{
+		font-size: 17px;
+	}
+
+	.list-group
+	{
+		text-align: center;
+	}
 }
 .icon
 {
@@ -155,4 +176,30 @@ a.sociallink
 {
 	color: #ddd;
 	text-decoration: none;
+}
+.wpis
+{
+	text-align: justify;
+	font-size: 16px;
+	padding: 30px;
+	margin-bottom: 40px;
+}
+.img-thumbnail
+{
+	max-width: 50%;
+}
+.list-group-item-dark
+{
+	background-color: #222;
+	color: white;
+}
+.list-group-item-dark:hover
+{
+	color: white;
+}
+.list-group .active
+{
+	background-color: #00CED1 !important;
+	color: white;
+	cursor: default;
 }
