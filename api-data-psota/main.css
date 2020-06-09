@@ -20,7 +20,6 @@ body
 	position: -webkit-sticky;
 	position: sticky;
 	top: 0px;
-
 }
 .nav-link, .navbar-brand
 {
@@ -65,7 +64,6 @@ h1
 {
 	position: relative;
 	height: auto;
-
 }
 .overlay .link
 {
@@ -105,7 +103,6 @@ a:link
 		height: auto;
 		padding: 10px 0;
 	}
-
 	.overlay .link {
 		position: absolute;
 		width: 100%;
@@ -123,17 +120,10 @@ a:link
 		text-align: left;
 		font-size: 15px;
 	}
-
-	.float-left
-	{
-		max-width: 50%;
-	}
-
 	.blockquote
 	{
-		font-size: 17px;
+		font-size: 15px;
 	}
-
 	.list-group
 	{
 		text-align: center;
@@ -161,7 +151,6 @@ a:link
 {
 	background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
 }
-
 footer
 {
 	background-color: #222222;
