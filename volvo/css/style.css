@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+}
+
+html {
+  font-family: 'Oswald', arial, sans-serif;
+  font-size: 10px;
+}
+
+nav
+{
+  max-width: 1440px;
+  margin: 30px auto;
+  text-align: right;
+}
+
+nav a
+{
+  font-size: 1.8rem;
+  display: inline-block;
+  font-family: 'Roboto Condensed', sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #555;
+  padding: 10px;
+  margin: 0 20px;
+  margin-left: 80px;
+  margin-right: 50px;
+  transition: 0.3s;
+}
+
+nav a.reservation
+{
+  font-size: 2.2rem;
+  border: 2px solid #555;
+  padding: 10px;
+}
+
+nav a.reservation:hover
+{
+  background-color: #888;
+  color:#eee;
+  border-color: #888;
+}
+
+nav a:hover
+{
+  border-bottom: 2px solid #555;
+  color: #222;
+}
+
+header
+{
+  background-image: url('../img/volvo-brand.jpg');
+  height: 40vh;
+  background-size: cover;
+}
+
+header h1
+{
+  font-size: 6rem;
+  text-align: center;
+  line-height: 40vh;
+  color: white;
+  background-color: rgba(0, 0, 0, 60%);
+  letter-spacing: 1px;
+}
+
+main
+{
+  max-width: 1440px;
+  margin: 5vh auto;
+  font-size: 0;
+}
+
+main p.description
+{
+  font-size: 2.2rem;
+  text-align: center;
+  margin: 90px 30px 70px 30px;
+  line-height: 200%;
+}
+
+main div.feature
+{
+  display: inline-block;
+  width: 33%;
+}
+
+img
+{
+  background-image: url('../img/volvo-tyre.jpg');
+  opacity: 0.85;
+  height: 300px;
+  width: auto;
+  margin: 20px 10px 25px 20px;
+  transition: 0.3s;
+}
+
+img:hover
+{
+  opacity: 1;
+}
+
+main h2
+{
+  font-size: 2rem;
+  text-align: center;
+  color: #222;
+}
+
+footer
+{
+  background-color: #333;
+}
+
+footer p
+{
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  letter-spacing: 2px;
+  padding: 1rem 0;
+}
