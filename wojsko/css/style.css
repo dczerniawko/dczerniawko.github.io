@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: arial, sans-serif;
+}
+
+body
+{
+  min-height: 300vh;
+}
+
+header
+{
+  height: 80vh;
+  background-image: url('../img/soldier-with-dog.jpg');
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+h1
+{
+  position: absolute;
+  top: 500px;
+  left: 0;
+  color: white;
+  font-size: 70px;
+  background-color: rgba(110,111,47,60%);
+  width: 100%;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+section
+{
+  width: 80%;
+  margin: 100px auto 0;
+  line-height: 190%;
+}
