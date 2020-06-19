@@ -17,7 +17,7 @@ header
   height: 90vh;
   background-color: #29a6dc;
   overflow: hidden;
-  max-width: 1620px;
+  max-width: 1920px;
   margin: 0 auto;
 }
 
@@ -238,7 +238,7 @@ header button
   }
   header img
   {
-    right: -15%;
+    right: -1%;
     height: 80%;
     bottom: -2%;
   }
@@ -291,7 +291,8 @@ header button
 
 .features
 {
-  margin-top: 50px;
+  max-width: 1600px;
+  margin: 50px auto 0;
   padding: 5%;
   text-align: center;
 }
@@ -490,7 +491,7 @@ header button
   }
   .portfolio .project
   {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
 }
 
@@ -516,6 +517,11 @@ header button
   .portfolio .project:nth-of-type(even) .about p
   {
     padding-right: 20px;
+  }
+  .portfolio .project:nth-of-type(even) h2
+  {
+    text-indent: 0;
+    margin-left: 40px;
   }
 }
 
