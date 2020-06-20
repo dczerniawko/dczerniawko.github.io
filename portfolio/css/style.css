@@ -550,3 +550,209 @@ header button
     margin-bottom: 20px;
   }
 }
+
+.slogan
+{
+  text-align: center;
+  background-image: url('../img/soldiers.jpg');
+  background-size: cover;
+  background-position: top center;
+  padding: 30px 10px;
+  color: white;
+  background-attachment: fixed;
+}
+
+.slogan h1
+{
+  font-family: 'Saira Condensed', sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+.slogan p
+{
+  font-family: 'Saira', sans-serif;
+  font-size: 18px;
+}
+
+.slogan p.author
+{
+  margin-top:20px;
+  font-size: 12px;
+}
+.slogan .bg
+{
+  padding: 30px 10px;
+  background-color: rgba(0, 63, 114, 0.5);
+}
+
+@media (orientation: landscape)
+{
+  .slogan p
+  {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 768px)
+{
+  .slogan .bg
+  {
+    padding: 50px 10px;
+  }
+  .slogan h1
+  {
+    font-size: 48px;
+    margin-bottom: 35px;
+  }
+
+  .slogan p
+  {
+    font-size: 26px;
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .slogan p.author
+  {
+    margin-top:40px;
+    font-size: 18px;
+  }
+}
+
+@media(min-width: 1024px)
+{
+  .slogan .bg
+  {
+    padding: 80px 10px;
+  }
+  .slogan h1
+  {
+    font-size: 60px;
+    margin-bottom: 55px;
+  }
+
+  .slogan p
+  {
+    font-size: 40px;
+    width: 50%;
+  }
+
+  .slogan p.author
+  {
+    margin-top:40px;
+    font-size: 26px;
+  }
+}
+
+.hobby
+{
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.hobby .item
+{
+  height: 20vh;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hobby .item:nth-of-type(1)
+{
+  background-image: url('../img/powerlifting.jpg');
+}
+.hobby .item:nth-of-type(2)
+{
+  background-image: url('../img/wot.jpg');
+}
+.hobby .item:nth-of-type(3)
+{
+  background-image: url('../img/api.jpg');
+}
+
+.hobby .item p
+{
+  font-family: 'Saira', sans-serif;
+  color: white;
+  text-align: center;
+  text-shadow: 0 0 4px black;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 20px;
+  padding: 5px 0;
+}
+
+.hobby h1
+{
+  padding: 20px;
+  font-family: 'Saira Condensed';
+  text-align: center;
+  font-size: 36px;
+  text-transform: uppercase;
+}
+
+@media (min-width: 533px)
+{
+  .hobby .item
+  {
+    float: left;
+    width: 33%;
+    height: 40vh;
+  }
+}
+
+@media (min-width: 768px)
+{
+  .hobby h1
+  {
+    font-size: 48px;
+    margin-top: 40px;
+    margin-bottom: 35px;
+  }
+  .hobby .item p
+  {
+    font-size: 30px;
+    padding: 15px 0;
+  }
+}
+
+@media (min-width: 1024px)
+{
+  .hobby .item p
+  {
+    padding: 0;
+    line-height: 40vh;
+    opacity: 0;
+    transition: 0.4s;
+    cursor: default;
+  }
+  .hobby .item:hover p
+  {
+    opacity: 1;
+  }
+  .hobby .item
+  {
+    background-size: 100%;
+    transition: 0.4s;
+  }
+  .hobby .item:hover
+  {
+    background-size: 130%;
+  }
+}
+
+@media (min-width: 1600px)
+{
+  .hobby h1
+  {
+    font-size: 60px;
+    margin-top: 50px;
+    margin-bottom: 45px;
+  }
+  .hobby .item p
+  {
+    font-size: 40px;
+  }
+}
