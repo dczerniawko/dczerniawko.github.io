@@ -9,15 +9,13 @@ html {
   font-size: 10px;
 }
 
-nav
-{
+nav {
   max-width: 1440px;
   margin: 30px auto;
   text-align: right;
 }
 
-nav a
-{
+nav a {
   font-size: 1.8rem;
   display: inline-block;
   font-family: 'Roboto Condensed', sans-serif;
@@ -31,35 +29,31 @@ nav a
   transition: 0.3s;
 }
 
-nav a.reservation
-{
+nav a.reservation {
   font-size: 2.2rem;
   border: 2px solid #555;
   padding: 10px;
+  animation: shakes 5s linear infinite;
 }
 
-nav a.reservation:hover
-{
+nav a.reservation:hover {
   background-color: #888;
-  color:#eee;
+  color: #eee;
   border-color: #888;
 }
 
-nav a:hover
-{
+nav a:hover {
   border-bottom: 2px solid #555;
   color: #222;
 }
 
-header
-{
+header {
   background-image: url('../img/volvo-brand.jpg');
   height: 40vh;
   background-size: cover;
 }
 
-header h1
-{
+header h1 {
   font-size: 6rem;
   text-align: center;
   line-height: 40vh;
@@ -68,29 +62,25 @@ header h1
   letter-spacing: 1px;
 }
 
-main
-{
+main {
   max-width: 1440px;
   margin: 5vh auto;
   font-size: 0;
 }
 
-main p.description
-{
+main p.description {
   font-size: 2.2rem;
   text-align: center;
   margin: 90px 30px 70px 30px;
   line-height: 200%;
 }
 
-main div.feature
-{
+main div.feature {
   display: inline-block;
   width: 33%;
 }
 
-img
-{
+img {
   background-image: url('../img/volvo-tyre.jpg');
   opacity: 0.85;
   height: 300px;
@@ -99,28 +89,74 @@ img
   transition: 0.3s;
 }
 
-img:hover
-{
+img:hover {
   opacity: 1;
 }
 
-main h2
-{
+main h2 {
   font-size: 2rem;
   text-align: center;
   color: #222;
 }
 
-footer
-{
+footer {
   background-color: #333;
 }
 
-footer p
-{
+footer p {
   color: white;
   font-size: 1.5rem;
   text-align: center;
   letter-spacing: 2px;
   padding: 1rem 0;
+}
+
+@keyframes shakes {
+  0% {
+    transform: translateX(0);
+  }
+
+  90% {
+    transform: translateX(0);
+  }
+
+  91% {
+    transform: translateX(20px);
+  }
+
+  92% {
+    transform: translateX(-20px);
+  }
+
+  93% {
+    transform: translateX(20px);
+  }
+
+  94% {
+    transform: translateX(-20px);
+  }
+
+  95% {
+    transform: translateX(20px);
+  }
+
+  96% {
+    transform: translateX(-20px);
+  }
+
+  97% {
+    transform: translateX(20px);
+  }
+
+  98% {
+    transform: translateX(-20px);
+  }
+
+  99% {
+    transform: translateX(20px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
 }
