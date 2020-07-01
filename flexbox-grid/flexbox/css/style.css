@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50vw;
+  height: 50vh;
+}
+
+div {
+  flex-basis: 20%;
+  height: 20%;
+  background-color: black;
+}
+
+div:nth-child(even) {
+  background-color: white;
+}

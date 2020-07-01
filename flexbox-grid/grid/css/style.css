@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  width: 50vw;
+  height: 50vh;
+  position: absolute;
+  top: calc(50% - 30vw);
+  left: calc(50% - 30vw);
+}
+
+div {
+  background-color: black;
+}
+
+div:nth-child(2n) {
+  background-color: white;
+}
