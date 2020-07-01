@@ -4,64 +4,53 @@
   box-sizing: border-box;
 }
 
-.clearfix::after
-{
+.clearfix::after {
   content: "";
   display: block;
   clear: both;
 }
 
-header
-{
+header {
   position: relative;
-  height: 90vh;
+  height: 60vh;
   background-color: #29a6dc;
   overflow: hidden;
   max-width: 1920px;
   margin: 0 auto;
 }
 
-header > *
-{
+header>* {
   position: absolute;
 }
 
-header img
-{
+header img {
   position: absolute;
   height: 50%;
   bottom: 0;
-  right:0;
+  right: 0;
 }
 
-header div.welcome
-{
+header div.welcome {
   z-index: 1;
-  top: 5%;
-  left: 5%;
-  right: 5%;
   text-align: center;
   font-family: 'Saira Condensed', sans-serif;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 75px;
   color: white;
   text-transform: uppercase;
 }
 
-header h1
-{
+header h1 {
   margin-top: 15px;
   font-size: 20px;
 }
 
-header h2
-{
+header h2 {
   font-weight: normal;
   font-size: 20px;
 }
 
-header button
-{
+header button {
   font-family: 'Saira', sans-serif;
   line-height: 32px;
   padding: 0 20px;
@@ -73,352 +62,335 @@ header button
   font-weight: 300;
 }
 
-@media (orientation: portrait) and (min-width: 360px)
-{
-  header h1
-  {
-    font-size: 24px;
+@media (orientation: portrait) and (min-width: 360px) {
+  header h1 {
+    font-size: 28px;
   }
-  header h2
-  {
-    font-size: 24px;
+
+  header h2 {
+    font-size: 26px;
   }
-  header button
-  {
-    line-height: 40px;
-    margin-top: 24px;
-    font-size: 16px;
+
+  header button {
+    line-height: 48px;
+    margin-top: 38px;
+    font-size: 18px;
+  }
+
+  header img {
+    height: 40%;
+    bottom: -3px;
+    right: -5px;
   }
 }
 
-@media (orientation: portrait) and (min-width: 410px)
-{
-  header h1
-  {
+@media (orientation: portrait) and (min-width: 410px) {
+  header h1 {
     font-size: 26px;
   }
-  header h2
-  {
+
+  header h2 {
     font-size: 26px;
   }
-  header button
-  {
+
+  header button {
     line-height: 50px;
     margin-top: 40px;
     font-size: 20px;
   }
-  header img
-  {
-    right: -10%;
+
+  header img {
+    right: -2%;
+    bottom: -3%;
   }
 }
 
-@media (orientation: portrait) and (min-width: 768px)
-{
-  header p
-  {
+@media (orientation: portrait) and (min-width: 768px) {
+  header p {
     font-size: 80px;
   }
-  header h1
-  {
+
+  header h1 {
     font-size: 32px;
   }
-  header h2
-  {
+
+  header h2 {
     font-size: 32px;
   }
-  header button
-  {
+
+  header button {
     line-height: 60px;
     margin-top: 60px;
     font-size: 24px;
   }
-  header img
-  {
-    right: -20%;
+
+  header img {
+    right: -1%;
   }
 }
 
-@media (orientation: landscape)
-{
-  header img
-  {
+@media (orientation: landscape) {
+  header img {
     height: 80%;
-    bottom: 0;
+    bottom: -3%;
     right: -1%;
   }
-  header div.welcome
-  {
-    top: 15%;
+
+  header div.welcome {
+    top: 9%;
     left: 5%;
     right: 50%;
   }
-  header button
-  {
+
+  header button {
     margin-top: 40px;
   }
 }
 
-@media (orientation: landscape) and (min-width: 640px)
-{
-  header h1
-  {
+@media (orientation: landscape) and (min-width: 640px) {
+  header h1 {
     font-size: 24px;
   }
-  header h2
-  {
+
+  header h2 {
     font-size: 24px;
   }
-  header button
-  {
+
+  header button {
     font-size: 16px;
     line-height: 40px;
   }
 }
 
-@media (orientation: landscape) and (min-width: 1024px)
-{
-  header div.welcome
-  {
+@media (orientation: landscape) and (min-width: 1024px) {
+  header div.welcome {
     left: 3%;
   }
-  header p
-  {
+
+  header p {
     font-size: 56px;
   }
-  header h1
-  {
+
+  header h1 {
     font-size: 34px;
     margin-top: 40px;
   }
-  header h2
-  {
+
+  header h2 {
     font-size: 34px;
   }
-  header button
-  {
+
+  header button {
     margin-top: 80px;
     font-size: 24px;
     line-height: 70px;
   }
-  header img
-  {
-    right: -22%;
-    height: 85%;
+
+  header img {
+    right: -2%;
+    height: 90%;
+    bottom: -3%;
   }
 }
 
-@media (orientation: landscape) and (min-width: 1280px)
-{
-  header div.welcome
-  {
+@media (orientation: landscape) and (min-width: 1280px) {
+  header div.welcome {
     text-align: left;
     left: 6%;
   }
-  header p
-  {
+
+  header p {
     font-size: 86px;
   }
-  header h1
-  {
+
+  header h1 {
     font-size: 50px;
     margin-top: 40px;
   }
-  header h2
-  {
+
+  header h2 {
     font-size: 50px;
   }
-  header button
-  {
+
+  header button {
     margin-top: 100px;
     font-size: 38px;
     line-height: 80px;
     padding: 0 40px;
     border-width: 4px;
   }
-  header img
-  {
+
+  header img {
     right: -1%;
     height: 80%;
     bottom: -2%;
   }
 }
 
-@media (orientation: landscape) and (min-width: 1600px)
-{
-  header div.welcome
-  {
+@media (orientation: landscape) and (min-width: 1600px) {
+  header div.welcome {
     left: 8%;
     top: 5%;
   }
-  header p
-  {
+
+  header p {
     font-size: 120px;
   }
-  header h1
-  {
+
+  header h1 {
     font-size: 60px;
     margin-top: 40px;
   }
-  header h2
-  {
+
+  header h2 {
     font-size: 60px;
   }
-  header button
-  {
+
+  header button {
     line-height: 90px;
   }
-  header img
-  {
+
+  header img {
     right: -2%;
     height: 90%;
   }
 }
 
-@media (min-width: 1024px)
-{
-  header button
-  {
+@media (min-width: 1024px) {
+  header button {
     cursor: pointer;
     transition: .3s;
   }
-  header button:hover
-  {
+
+  header button:hover {
     background-color: #fff;
     color: #111;
   }
+
+  .hobby .item p {
+    padding: 0;
+    line-height: 40vh;
+    opacity: 0;
+    transition: 1s;
+    cursor: default;
+  }
 }
 
-.features
-{
+.features {
   max-width: 1600px;
   margin: 50px auto 0;
   padding: 5%;
   text-align: center;
 }
 
-.features h1
-{
+.features h1 {
   font-family: 'Saira Condensed', sans-serif;
   font-size: 24px;
   text-transform: uppercase;
   margin-bottom: 15px;
 }
 
-.features h2
-{
+.features h2 {
   font-family: 'Saira Condensed', sans-serif;
   font-size: 18px;
   text-transform: uppercase;
 }
 
-.features p
-{
+.features p {
   font-family: 'Saira', sans-serif;
   font-size: 12px;
   font-weight: 300;
   margin: 20px 0;
 }
 
-.features img
-{
+.features img {
   width: 100%;
   margin: 5px 0;
   max-width: 375px;
 }
 
-@media (min-width: 360px)
-{
-  .features p
-  {
+@media (min-width: 360px) {
+  .features p {
     font-size: 16px;
   }
-  .feature h2
-  {
+
+  .feature h2 {
     font-size: 24px;
   }
-  .feature h1
-  {
-    font-size: 28px;
+
+  .feature h1 {
+    font-size: 30px;
   }
 }
 
-@media (min-width: 768px)
-{
-  .features p
-  {
+@media (min-width: 768px) {
+  .features p {
     font-size: 18px;
   }
-  .feature h2
-  {
+
+  .feature h2 {
     font-size: 28px;
   }
-  .feature h1
-  {
+
+  .feature h1 {
     font-size: 34px;
   }
 }
 
-@media (min-width: 1024px)
-{
-  .features
-  {
+@media (min-width: 1024px) {
+  .features {
     margin-top: 50px;
     padding: 5% 2%;
     text-align: center;
   }
-  .feature
-  {
-    float:left;
+
+  .feature {
+    float: left;
     width: 33%;
     padding: 20px;
   }
-  .features p
-  {
+
+  .features p {
     font-size: 16px;
     line-height: 120%;
     padding: 0 10px;
   }
-  .feature h2
-  {
+
+  .feature h2 {
     font-size: 22px;
   }
-  .feature h1
-  {
+
+  .feature h1 {
     font-size: 34px;
   }
 }
 
-@media (min-width: 1600px)
-{
-  .feature
-  {
+@media (min-width: 1600px) {
+  .feature {
     padding: 20px 40px;
   }
-  .features h1
-  {
+
+  .features h1 {
     font-size: 56px;
   }
-  .features h2
-  {
+
+  .features h2 {
     font-size: 32px;
   }
-  .features p
-  {
+
+  .features p {
     font-size: 21px;
     line-height: 140%;
     padding: 0 10px;
   }
 }
 
-.portfolio
-{
+.portfolio {
   background-color: black;
   padding: 10px 0 30px;
 }
 
-.portfolio h1
-{
+.portfolio h1 {
   font-family: 'Saira Condensed', sans-serif;
   font-size: 28px;
   color: white;
@@ -428,13 +400,11 @@ header button
   margin-bottom: 15px;
 }
 
-.portfolio .web img
-{
+.portfolio .web img {
   width: 100%;
 }
 
-.portfolio .about
-{
+.portfolio .about {
   color: white;
   font-family: 'Saira', sans-serif;
   font-weight: normal;
@@ -442,8 +412,7 @@ header button
   text-align: left;
 }
 
-.portfolio .about h2
-{
+.portfolio .about h2 {
   font-size: 18px;
   border-bottom: 2px solid white;
   margin-bottom: 12px;
@@ -451,108 +420,99 @@ header button
   text-indent: 20px;
 }
 
-.portfolio .about p
-{
+.portfolio .about p {
   font-size: 12px;
   padding-left: 20px;
 }
 
-.portfolio .project
-{
+.portfolio .project {
   max-width: 1400px;
   margin: 0 auto 20px;
 }
 
-.portfolio .project:nth-of-type(odd)
-{
+.portfolio .project:nth-of-type(odd) {
   background-color: #ff4f2c;
 }
 
-.portfolio .project:nth-of-type(even)
-{
+.portfolio .project:nth-of-type(even) {
   background-color: #29a6dc;
 }
 
-@media(min-width: 768px)
-{
-  .portfolio h1
-  {
+@media(min-width: 768px) {
+  .portfolio h1 {
     font-size: 40px;
   }
-  .portfolio .about h2
-  {
+
+  .portfolio .about h2 {
     font-size: 28px;
     text-indent: 40px;
   }
-  .portfolio .about p
-  {
+
+  .portfolio .about p {
     font-size: 12px;
     padding-left: 40px;
   }
-  .portfolio .project
-  {
+
+  .portfolio .project {
     margin-bottom: 40px;
   }
 }
 
-@media (orientation: landscape)
-{
-  .web, .about
-  {
+@media (orientation: landscape) {
+
+  .web,
+  .about {
     width: 50%;
     float: left;
   }
-  .web img
-  {
+
+  .web img {
     display: block;
   }
-  .portfolio .project:nth-of-type(even) .web
-  {
+
+  .portfolio .project:nth-of-type(even) .web {
     float: right;
   }
-  .portfolio .project:nth-of-type(even) .about
-  {
+
+  .portfolio .project:nth-of-type(even) .about {
     padding-right: 0;
   }
-  .portfolio .project:nth-of-type(even) .about p
-  {
+
+  .portfolio .project:nth-of-type(even) .about p {
     padding-right: 20px;
   }
-  .portfolio .project:nth-of-type(even) h2
-  {
+
+  .portfolio .project:nth-of-type(even) h2 {
     text-indent: 0;
     margin-left: 40px;
   }
 }
 
-@media (orientation: landscape) and (min-width: 1400px)
-{
-  .portfolio h1
-  {
+@media (orientation: landscape) and (min-width: 1400px) {
+  .portfolio h1 {
     font-size: 60px;
     padding: 30px 0;
   }
-  .portfolio .about h2
-  {
+
+  .portfolio .about h2 {
     padding-top: 50px;
     font-size: 28px;
     text-indent: 40px;
     margin-bottom: 50px;
   }
-  .portfolio .about p
-  {
+
+  .portfolio .about p {
     font-size: 18px;
     padding-left: 40px;
     line-height: 180%;
   }
-  .portfolio .project
-  {
+
+  .portfolio .project {
     margin-bottom: 20px;
   }
 }
 
-.slogan
-{
+.slogan {
   text-align: center;
   background-image: url('../img/soldiers.jpg');
   background-size: cover;
@@ -562,243 +522,215 @@ header button
   background-attachment: fixed;
 }
 
-.slogan h1
-{
+.slogan h1 {
   font-family: 'Saira Condensed', sans-serif;
   font-size: 24px;
   text-transform: uppercase;
   margin-bottom: 25px;
 }
 
-.slogan p
-{
+.slogan p {
   font-family: 'Saira', sans-serif;
   font-size: 18px;
 }
 
-.slogan p.author
-{
-  margin-top:20px;
+.slogan p.author {
+  margin-top: 20px;
   font-size: 12px;
 }
-.slogan .bg
-{
+
+.slogan .bg {
   padding: 30px 10px;
   background-color: rgba(0, 63, 114, 0.5);
 }
 
-@media (orientation: landscape)
-{
-  .slogan p
-  {
+@media (orientation: landscape) {
+  .slogan p {
     width: 70%;
     margin: 0 auto;
   }
 }
 
-@media (min-width: 768px)
-{
-  .slogan .bg
-  {
+@media (min-width: 768px) {
+  .slogan .bg {
     padding: 50px 10px;
   }
-  .slogan h1
-  {
+
+  .slogan h1 {
     font-size: 48px;
     margin-bottom: 35px;
   }
 
-  .slogan p
-  {
+  .slogan p {
     font-size: 26px;
     width: 60%;
     margin: 0 auto;
   }
 
-  .slogan p.author
-  {
-    margin-top:40px;
+  .slogan p.author {
+    margin-top: 40px;
     font-size: 18px;
   }
 }
 
-@media(min-width: 1024px)
-{
-  .slogan .bg
-  {
+@media(min-width: 1024px) {
+  .slogan .bg {
     padding: 80px 10px;
   }
-  .slogan h1
-  {
+
+  .slogan h1 {
     font-size: 60px;
     margin-bottom: 55px;
   }
 
-  .slogan p
-  {
+  .slogan p {
     font-size: 40px;
     width: 50%;
   }
 
-  .slogan p.author
-  {
-    margin-top:40px;
+  .slogan p.author {
+    margin-top: 40px;
     font-size: 26px;
   }
 }
 
-.hobby
-{
+.hobby {
   max-width: 1920px;
   margin: 0 auto;
 }
 
-.hobby .item
-{
-  height: 20vh;
+.hobby .item {
+  height: 25vh;
+
+}
+
+.hobby .item {
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.hobby .item:nth-of-type(1)
-{
+.hobby .item:nth-of-type(1) {
   background-image: url('../img/powerlifting.jpg');
 }
-.hobby .item:nth-of-type(2)
-{
+
+.hobby .item:nth-of-type(2) {
   background-image: url('../img/wot.jpg');
 }
-.hobby .item:nth-of-type(3)
-{
+
+.hobby .item:nth-of-type(3) {
   background-image: url('../img/api.jpg');
 }
 
-.hobby .item p
-{
-  font-family: 'Saira', sans-serif;
+.hobby .item p {
+  font-family: 'saira', sans-serif;
   color: white;
   text-align: center;
   text-shadow: 0 0 4px black;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, .5);
   font-size: 20px;
   padding: 5px 0;
 }
 
-.hobby h1
-{
+.hobby h1 {
+  font-family: 'saira condensed', sans-serif;
   padding: 20px;
-  font-family: 'Saira Condensed';
   text-align: center;
   font-size: 36px;
   text-transform: uppercase;
 }
 
-@media (min-width: 533px)
-{
-  .hobby .item
-  {
+@media (min-width: 533px) {
+  .hobby .item {
     float: left;
     width: 33%;
     height: 40vh;
   }
 }
 
-@media (min-width: 768px)
-{
-  .hobby h1
-  {
+@media (min-width: 768px) {
+  .hobby h1 {
     font-size: 48px;
-    margin-top: 40px;
-    margin-bottom: 35px;
+    margin-top: 50px;
+    margin-bottom: -40px;
   }
-  .hobby .item p
-  {
+
+  .hobby .item p {
     font-size: 30px;
     padding: 15px 0;
   }
 }
 
-@media (min-width: 1024px)
-{
-  .hobby .item p
-  {
+@media (min-width: 1024px) {
+  .hobby .item p {
     padding: 0;
-    line-height: 40vh;
+    line-height: 31vh;
+    margin-top: 13%;
     opacity: 0;
-    transition: 0.4s;
+    transition: 1s;
     cursor: default;
   }
-  .hobby .item:hover p
-  {
+
+  .hobby .item:hover p {
     opacity: 1;
   }
-  .hobby .item
-  {
+
+  .hobby .item {
     background-size: 100%;
-    transition: 0.4s;
+    transition: 1s;
   }
-  .hobby .item:hover
-  {
+
+  .hobby .item:hover {
     background-size: 130%;
   }
+
 }
 
-@media (min-width: 1600px)
-{
-  .hobby h1
-  {
+@media (min-width: 1600px) {
+  .hobby h1 {
     font-size: 60px;
     margin-top: 50px;
     margin-bottom: 45px;
+
   }
-  .hobby .item p
-  {
+
+  .hobby .item p {
     font-size: 40px;
   }
 }
 
-.contact
-{
+.contact {
   background-color: #000;
-  padding: 30px 20px;
+  padding: 20px 20px;
+  margin-top: 15px;
 }
 
-.cotact h1
-{
+.cotact h1 {
   font-family: 'Saira Condensed', sans-serif;
   font-size: 26px;
   text-transform: uppercase;
   margin-bottom: 15px;
 }
 
-.contract .wrap
-{
+.contract .wrap {
   padding: 20px;
   max-width: 1024px;
   margin: 0 auto;
 }
 
-.contact input, .contact button, .contact textarea
-{
+.contact input,
+.contact button,
+.contact textarea {
   width: 100%;
-  margin-bottom: 25px;
   font-family: 'Saira', sans-serif;
-  font-size: 12px;
-  padding: 5px;
+  font-size: 18px;
+  padding: 10px;
 }
 
-.contact .input
-{
-  height: 36px;
+.contact .textarea {
+  height: 18px;
 }
 
-.contact .textarea
-{
-  height: 12px;
-}
-
-.contact button
-{
+.contact button {
   font-size: 14px;
   line-height: 40px;
   background-color: black;
@@ -809,7 +741,7 @@ header button
 .fa {
   padding: 20px;
   font-size: 30px;
-  width: 50px;
+  width: 40px;
   color: white;
   text-align: center;
   text-decoration: none;
@@ -820,92 +752,93 @@ header button
   opacity: 1;
 }
 
-.contact .socials
-{
+.contact .socials {
   padding: 30px;
   font-size: 0;
 }
 
-.contact .social
-{
+.contact .social {
   color: white;
   font-family: 'Saira', sans-serif;
 }
 
-.contact .social a
-{
+.contact .social a {
   float: left;
 }
 
-.contact .social span
-{
-  line-height: 72px;
-  padding: 20px;
+.contact .social span {
+  line-height: 28px;
+  padding: 22px;
   float: left;
-  font-size: 20px;
+  font-size: 18px;
 }
 
-@media (min-width: 533px)
-{
-  .contact .social
-  {
+@media (min-width: 533px) {
+  .contact .social {
     display: inline-block;
     width: 50%;
   }
 }
 
-@media (min-width: 1024px)
-{
-  .contact h1
-  {
+@media (min-width: 1024px) {
+  .contact h1 {
     font-size: 60px;
     padding: 30px 0;
     color: white;
     text-align: center;
     font-family: 'Saira', sans-serif;
   }
-  .contact form, .contact .socials
-  {
-    float:left;
+
+  .contact form,
+  .contact .socials {
+    float: left;
     width: 50%;
     padding: 0 20px;
   }
-  .contact .social
-  {
+
+  .contact .social {
     display: block;
     width: 50%;
     margin: 0 auto;
   }
-  .contact input, .contact button, .contact textarea
-  {
+
+  .contact input,
+  .contact button,
+  .contact textarea {
     margin-bottom: 35px;
   }
-  .contact .input
-  {
+
+  .contact .input {
     height: 46px;
     font-size: 24px;
   }
-  .contact .textarea
-  {
+
+  .contact .textarea {
     height: 120px;
     font-size: 24px;
   }
-  .contact button
-  {
+
+  .contact button {
     font-size: 20px;
     line-height: 50px;
     transition: .3s;
     cursor: pointer;
   }
-  .contact button:hover
-  {
+
+  .contact button:hover {
     color: black;
     background-color: white;
   }
+
+  .contact .social span {
+    line-height: 32px;
+    padding: 20px;
+    float: left;
+    font-size: 15px;
+  }
 }
 
-footer
-{
+footer {
   background-color: #29a6dc;
   color: white;
   font-size: 'Saira', sans-serif;
