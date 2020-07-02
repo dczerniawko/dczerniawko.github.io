@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  /* box-sizing: border-box; */
 }
 
 html {
@@ -17,7 +16,8 @@ nav {
 
 nav a {
   font-size: 1.8rem;
-  display: inline-block;
+  position: relative;
+  overflow: hidden;
   font-family: 'Roboto Condensed', sans-serif;
   text-decoration: none;
   text-transform: uppercase;
@@ -26,6 +26,7 @@ nav a {
   margin: 0 20px;
   margin-left: 80px;
   margin-right: 50px;
+  overflow: -moz-hidden-unscrollable;
   transition: 0.3s;
 }
 
@@ -42,9 +43,18 @@ nav a.reservation:hover {
   border-color: #888;
 }
 
-nav a:hover {
-  border-bottom: 2px solid #555;
-  color: #222;
+span {
+  position: absolute;
+  width: 80%;
+  height: 3px;
+  background-color: #000;
+  bottom: 0;
+  left: -100%;
+  transition: 0.4s;
+}
+
+a:hover span {
+  left: 10%;
 }
 
 header {
