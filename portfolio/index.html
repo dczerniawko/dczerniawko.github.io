@@ -32,7 +32,7 @@
       <p class="type">Cześć!</p>
       <h1>Jestem Daria Czerniawko</h1>
       <h2>Junior Web Developer</h2>
-      <button>Sprawdź moje projekty</button>
+      <button class="projects">Sprawdź moje projekty</button>
     </div>
     <img src="img/czerniawko_daria.png" alt="Daria Czerniawko" />
   </header>
@@ -81,7 +81,7 @@
       </div>
     </section>
 
-    <section class="portfolio">
+    <section class="portfolio" id="projects">
       <h1>Projekty, z których jestem dumna</h1>
       <div class="project clearfix">
         <div class="web">
@@ -89,7 +89,9 @@
         </div>
         <div class="about">
           <h2>moje-zwierzeta.pl</h2>
-          <p>Mój pierwszy pierwszy projekt strony internetowej na którym opisałam swoje zwierzęta domowe.</p>
+          <p>Mój pierwszy pierwszy projekt strony internetowej, w którym uzyłam podstaw HTML oraz CSS.
+            Projekt zrbiony na samym początku mojej nauki budowania stron internetowych.
+          </p>
         </div>
       </div>
       <div class="project clearfix">
@@ -175,7 +177,14 @@
   </main>
 
   <footer>&copy Daria Czerniawko - Portfolio 2020</footer>
-  <script src="https://skrypt-cookies.pl/id/c383351c2d40ff6e.js"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script>
+    $('.projects').on('click', function () {
+      $('body, html').animate({
+        scrollTop: $('#projects').offset().top
+      })
+    })
+  </script>
 </body>
 
 </html>

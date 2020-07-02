@@ -259,23 +259,22 @@ header button {
   header div.welcome {
     text-align: left;
     left: 6%;
-  }
-
-  header p {
-    font-size: 86px;
+    top: -30px;
   }
 
   header h1 {
-    font-size: 50px;
-    margin-top: 40px;
+    font-size: 30;
+    margin-top: 10px;
   }
 
   header h2 {
-    font-size: 50px;
+    font-size: 25;
+    margin-bottom: 10px;
   }
 
   header button {
     font-size: 29px;
+    margin-top: 0;
     line-height: 56px;
     padding: 0 40px;
     border-width: 4px;
@@ -283,8 +282,12 @@ header button {
 
   header img {
     right: -1%;
-    height: 80%;
+    height: 90%;
     bottom: -2%;
+  }
+
+  .type {
+    font-size: 80px;
   }
 }
 
@@ -330,7 +333,6 @@ header button {
 
   .hobby .item p {
     padding: 0;
-    line-height: 40vh;
     opacity: 0;
     transition: 1s;
     cursor: default;
@@ -712,7 +714,7 @@ header button {
   .hobby h1 {
     font-size: 48px;
     margin-top: 50px;
-    margin-bottom: -40px;
+    margin-bottom: 10px;
   }
 
   .hobby .item p {
@@ -724,7 +726,6 @@ header button {
 @media (min-width: 1024px) {
   .hobby .item p {
     padding: 0;
-    line-height: 31vh;
     margin-top: 13%;
     opacity: 0;
     transition: 1s;
