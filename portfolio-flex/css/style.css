@@ -75,6 +75,7 @@ h1 {
   font-family: 'Saira Condensed', sans-serif;
   text-transform: uppercase;
   text-align: center;
+  color: #000;
 }
 
 section {
@@ -142,7 +143,8 @@ section {
   margin-bottom: 8px;
   padding-bottom: 10px;
   padding-left: 5px;
-  padding-right: 5px;
+  padding-right: 10px;
+  margin: 1px;
 }
 
 .portfolio .about p {
@@ -302,7 +304,6 @@ section {
 
 .contact .socials {
   padding: 30px;
-  font-size: 0;
 }
 
 .contact .social {
@@ -637,5 +638,236 @@ footer {
 @keyframes typing {
   to {
     width: 0;
+  }
+}
+
+@media (min-width: 1280px) {
+  header div.welcome {
+
+    width: 100%;
+    top: 65%;
+    left: 45%;
+  }
+
+  .type {
+    font-size: 100px;
+    margin-bottom: 20px;
+  }
+
+  header button {
+    transition: .3s;
+    font-size: 35px;
+    line-height: 60px;
+  }
+
+  header button:hover {
+    background-color: #fff;
+    color: #111;
+  }
+
+  .features {
+    display: flex;
+  }
+
+  .col {
+    padding: 30px 50px;
+  }
+
+  .features p {
+    font-size: 16px;
+  }
+
+  .features h2 {
+    font-size: 27px;
+  }
+
+  header h1 {
+    color: #fff;
+  }
+
+  .proud {
+    background-color: #000;
+  }
+
+  .proud h1 {
+    color: #fff;
+    padding-top: 20px;
+  }
+
+  .portfolio .about p {
+    font-size: 18px;
+  }
+
+  .portfolio .about h2:nth-of-type(odd) {
+    margin-right: 30px;
+  }
+
+  h1 {
+    color: #000;
+    font-size: 50px;
+  }
+
+  .portfolio .project h2 {
+    font-size: 30px;
+    margin-top: 20px;
+  }
+
+  .slogan h1 {
+    color: #fff;
+  }
+
+  .hobby .item {
+    display: inline-flex;
+    background-size: 100%;
+    transition: 1s;
+    height: 40vh;
+    margin: 0;
+    width: 33%;
+  }
+
+  .hobby .item p {
+    padding: 0;
+    opacity: 0;
+    transition: 1s;
+    cursor: default;
+  }
+
+  .hobby .item:hover p {
+    opacity: 1;
+  }
+
+  .hobby .item:hover {
+    background-size: 130%;
+  }
+
+  .contact {
+    background-color: #000;
+    padding: 20px 20px;
+    margin-top: 15px;
+    display: flex;
+  }
+
+  .cotact h1 {
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 26px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+
+  /*
+  .wrap {
+    display: flex;
+  }
+
+  .contact input,
+  .contact button,
+  .contact textarea {
+    width: 100%;
+    font-family: 'Saira', sans-serif;
+    font-size: 18px;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .contact .textarea {
+    height: 18px;
+  }
+
+  .contact button {
+    font-size: 14px;
+    line-height: 40px;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    transform: .2s;
+  }
+
+  .contact button:hover {
+    color: black;
+    background-color: white;
+  }
+}
+
+.contact {
+  background-color: #000;
+  padding: 20px 20px;
+  margin-top: 15px;
+}
+
+.cotact h1 {
+  font-family: 'Saira Condensed', sans-serif;
+  font-size: 26px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}*/
+
+  .wrap {
+    display: flex;
+    margin: 20px;
+    max-width: 1024px;
+  }
+
+  .contact input,
+  .contact button,
+  .contact textarea {
+    font-size: 18px;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .contact .textarea {
+    height: 18px;
+  }
+
+  .contact button {
+    font-size: 14px;
+    line-height: 40px;
+    background-color: black;
+    color: white;
+    transition: .3s;
+    cursor: pointer;
+    border: 2px solid white;
+  }
+
+  .contact button:hover {
+    color: black;
+    background-color: white;
+  }
+
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 40px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    opacity: 0.8;
+  }
+
+  .fa:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+
+  .contact .socials {
+    display: grid;
+    padding: 0;
+    margin: 10px;
+  }
+
+  .contact .social {
+    color: white;
+    font-family: 'Saira', sans-serif;
+    display: flex;
+  }
+
+  .contact .social span {
+    line-height: 28px;
+    padding: 22px;
+    font-size: 18px;
+  }
+
+  .contact .wrap form {
+    margin-right: 10%;
   }
 }
