@@ -5,6 +5,10 @@
   max-width: 1600px;
 }
 
+body {
+  overflow-x: hidden
+}
+
 header {
   position: relative;
   height: 60vh;
@@ -668,6 +672,21 @@ footer {
     padding: 30px 50px;
   }
 
+  .art1,
+  .art3 {
+    transform: translateX(-100vw);
+  }
+
+  .art2 {
+    transform: translateX(100vw);
+  }
+
+  .proud .art1.active,
+  .proud .art2.active,
+  .proud .art3.active {
+    transform: translateX(0);
+  }
+
   .features p {
     font-size: 16px;
   }
@@ -682,6 +701,10 @@ footer {
 
   .proud {
     background-color: #000;
+  }
+
+  .proud .project {
+    transition: 1s;
   }
 
   .proud h1 {
