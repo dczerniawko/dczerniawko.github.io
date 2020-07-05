@@ -1,7 +1,8 @@
 * {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
+  max-width: 1600px;
 }
 
 header {
@@ -9,7 +10,6 @@ header {
   height: 60vh;
   background-color: #29a6dc;
   overflow: hidden;
-  max-width: 1920px;
 }
 
 header>* {
@@ -369,15 +369,10 @@ footer {
   .web,
   .about {
     width: 50%;
-    float: left;
   }
 
   .web img {
     display: block;
-  }
-
-  .portfolio .project:nth-of-type(even) .web {
-    float: right;
   }
 
   .portfolio .project:nth-of-type(even) .about {
@@ -695,7 +690,7 @@ footer {
   }
 
   .portfolio .about p {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .portfolio .about h2:nth-of-type(odd) {
@@ -754,53 +749,6 @@ footer {
     margin-bottom: 15px;
   }
 
-  /*
-  .wrap {
-    display: flex;
-  }
-
-  .contact input,
-  .contact button,
-  .contact textarea {
-    width: 100%;
-    font-family: 'Saira', sans-serif;
-    font-size: 18px;
-    padding: 10px;
-    margin: 10px;
-  }
-
-  .contact .textarea {
-    height: 18px;
-  }
-
-  .contact button {
-    font-size: 14px;
-    line-height: 40px;
-    background-color: black;
-    color: white;
-    border: 2px solid white;
-    transform: .2s;
-  }
-
-  .contact button:hover {
-    color: black;
-    background-color: white;
-  }
-}
-
-.contact {
-  background-color: #000;
-  padding: 20px 20px;
-  margin-top: 15px;
-}
-
-.cotact h1 {
-  font-family: 'Saira Condensed', sans-serif;
-  font-size: 26px;
-  text-transform: uppercase;
-  margin-bottom: 15px;
-}*/
-
   .wrap {
     display: flex;
     margin: 20px;
@@ -835,11 +783,10 @@ footer {
   }
 
   .fa {
+    display: contents;
     padding: 20px;
-    font-size: 30px;
-    width: 40px;
+    font-size: 40px;
     color: white;
-    text-align: center;
     text-decoration: none;
     opacity: 0.8;
   }
@@ -850,9 +797,9 @@ footer {
   }
 
   .contact .socials {
-    display: grid;
     padding: 0;
-    margin: 10px;
+    margin: 10px 0;
+    text-align: left;
   }
 
   .contact .social {
@@ -863,8 +810,9 @@ footer {
 
   .contact .social span {
     line-height: 28px;
-    padding: 22px;
+    padding: 20px;
     font-size: 18px;
+    margin: 0 0;
   }
 
   .contact .wrap form {
