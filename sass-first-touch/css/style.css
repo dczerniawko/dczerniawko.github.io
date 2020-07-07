@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+nav ul li {
+  width: 30%;
+}
+
+nav ul li a {
+  display: block;
+  line-height: 50px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #000000;
+  color: #ddd;
+  text-transform: uppercase;
+}
+
+nav ul li a:hover {
+  background-color: yellow;
+  color: black;
+}
+/*# sourceMappingURL=style.css.map */
