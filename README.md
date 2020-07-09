@@ -1,2 +1,2 @@
 # dczerniawko
-When I fell in love with the front-end ;-)
+![frontend roadmap](frontend-roadmap/frontendDiagram.svg)
