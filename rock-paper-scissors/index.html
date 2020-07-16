@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Rock - Paper - Scissors</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+    <img class="logo" src="img/logo.svg" alt="rock-paper-scissor">
+    <div class="select">
+
+        <p class="choice">Your choice:</p>
+
+        <img data-option="paper" src="img/paper.svg" alt="paper" title="paper">
+        <img data-option="rock" src="img/rock.svg" alt="rock" title="rock">
+        <img data-option="scissors" src="img/scissors.svg" alt="scissors" title="scissors">
+
+    </div>
+
+    <button class="start">Let's play!</button>
+
+    <div class="panel-left">
+        <p>Your choice: <span data-summary="your-choice"></span></p>
+    </div>
+
+    <div class="panel-right">
+        <p>AI choice: <span data-summary="ai-choice"></span></p>
+    </div>
+
+    <div class="win-is">
+        <p>Score: <span data-summary="who-win"></span></p>
+    </div>
+    <div class="statistic">
+        <p>Statistic</p>
+        <p class="numbers">Number of game: <span>0</span></p>
+        <p class="wins">Wins: <span>0</span></p>
+        <p class="losses">Losses: <span>0</span></p>
+        <p class="draws">Draws: <span>0</span></p>
+    </div>
+
+
+    <script src="js/game.js"></script>
+</body>
+
+</html>
+<!--<a href="https://www.vecteezy.com/free-vector/rock-paper-scissor">Rock Paper Scissor Vectors by Vecteezy</a>-->

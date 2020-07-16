@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background-color: #fcfcfc;
+}
+
+.logo {
+    width: 45%;
+    margin: 2% 25%;
+    margin-left: 29%;
+    max-width: 1280px;
+}
+
+.choice {
+    margin: 5% 0;
+    font-size: 25px;
+}
+
+.select {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.select img {
+    width: 15rem;
+    height: 15rem;
+    margin: 5%;
+    overflow: hidden;
+}
+
+button {
+    display: block;
+    padding: 5px 20px;
+    border: 2px solid black;
+    text-transform: uppercase;
+    background-color: #fff;
+    font-weight: bold;
+    margin: 20px auto;
+    transition: .3s;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(20, 20, 20);
+    color: white
+}
+
+span {
+    font-weight: bold;
+}
+
+.panel-left,
+.panel-right {
+    display: inline-block;
+    width: 48%;
+    overflow: hidden;
+    margin: 40px auto 0;
+    text-align: center;
+    font-size: 25px;
+}
+
+.win-is {
+    margin: 5% auto;
+    text-align: center;
+    font-size: 40px;
+}
+
+.statistic {
+    text-align: center;
+}
