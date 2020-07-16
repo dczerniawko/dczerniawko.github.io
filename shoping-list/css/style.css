@@ -1,0 +1,23 @@
+* {
+    font-family: monospace;
+    color: white;
+    background-color: #222;
+    text-align: center;
+}
+
+bold {
+    color: lime;
+}
+
+input {
+    border-radius: 25px;
+    width: 350px;
+    height: 40px;
+    font-size: 18px;
+}
+
+button {
+    border-radius: 25px;
+    height: 30px;
+    width: 30px;
+}
