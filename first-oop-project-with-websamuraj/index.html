@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Casino Royale</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="wrap">
+
+    <h1>Ca$ino R0yale</h1>
+
+    <section class="game">
+      <div class="color"></div>
+      <div class="color"></div>
+      <div class="color"></div>
+    </section>
+
+    <section class="play">
+      <input type="number" placeholder="Let's bet!" id="bid">
+      <button id="start">Go!</button>
+    </section>
+
+    <section class="panel">Account balance: <span class="wallet"></span></section>
+
+    <section class="score">
+      <span class="result">You have already played</span> <span class="number"></span> game. Result: <span
+        class="win"></span> wins
+      and <span class="loss"></span> losses.
+    </section>
+
+  </div>
+  <script src="js/wallet.js"></script>
+  <script src="js/game.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
