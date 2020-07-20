@@ -9,6 +9,7 @@ const activeCards = [];
 
 const gameLength = cards.length / 2;
 let gameResult = 0;
+let turnCounter = 0;
 
 
 const clickCard = function () {
@@ -19,6 +20,7 @@ const clickCard = function () {
 
     if (activeCards.length === 0) {
         activeCards[0] = activeCard;
+        turnCounter++;
         return;
 
     } else {
@@ -35,7 +37,7 @@ const clickCard = function () {
                 if (gameResult == gameLength) {
                     const endTime = new Date().getTime();
                     const gameTime = ((endTime - startTime) / 1000);
-                    alert(`Your game time is: ${gameTime} second.`)
+                    alert(`Your game time is: ${gameTime} second in ${turnCounter} turns!`)
                     location.reload();
                 }
             } else {
