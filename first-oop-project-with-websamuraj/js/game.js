@@ -20,19 +20,29 @@ class Game {
         })
         this.spanWallet.textContent = money;
         if (result) {
-            result = `You win ${wonMoney}!`;
-        } else if (!result && result != "") {
-            resullt = `You lose ${bet}!`;
+            result = `You win ${wonMoney}$!`;
+        } else if (!result && result !== "") {
+            result = `You lose ${bet}$!`;
         }
         this.spanResult.textContent = result;
         this.spanGames.textContent = statistic[0];
-        this.spanWins.textContent = statistic[0];
-        this.spanLosses.textContent = statistic[0];
+        this.spanWins.textContent = statistic[1];
+        this.spanLosses.textContent = statistic[2];
     }
     startGame() {
         if (this.inputBet.value < 1) return alert('This amount is too small.');
         const bet = Math.floor(this.inputBet.value);
 
         if (!this.wallet.checkCanPlay(bet)) return alert('You do not have enough money!');
+
+        this.wallet.changeWallet(bet, '-');
+        this.draw = new Draw();
+        const colors = this.draw.getDrawResult();
+        const win = Result.checkWin(colors);
+        const wonMoney = Result.moneyWinInGame(win, bet);
+        this.wallet.changeWallet(wonMoney);
+        this.statistic.addGameToStatistics(win, bet);
+
+        this.render(colors, this.wallet.getWalletValue(), win, this.statistic.showGameStatistics(), bet, wonMoney);
     }
 }
