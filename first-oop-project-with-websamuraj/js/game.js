@@ -30,6 +30,9 @@ class Game {
         this.spanLosses.textContent = statistic[0];
     }
     startGame() {
-        if (this.inputBet.value < 1) return alert('You do not have enough money');
+        if (this.inputBet.value < 1) return alert('This amount is too small.');
+        const bet = Math.floor(this.inputBet.value);
+
+        if (!this.wallet.checkCanPlay(bet)) return alert('You do not have enough money!');
     }
 }
