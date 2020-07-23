@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  background-color: rgb(25, 29, 31);
+  color: bisque;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 36px;
+  letter-spacing: 2px;
+  margin: 20px;
+}
+
+.form {
+  display: grid;
+}
+
+label {
+  margin: 10px;
+  font-size: 20px;
+  width: 100%;
+}
+
+button {
+  width: 50%;
+  height: 30px;
+  background-color: rgb(91, 163, 94);
+  cursor: pointer;
+  color: bisque;
+  border-radius: 5px;
+  letter-spacing: 2px;
+  margin-left: 25%;
+}
