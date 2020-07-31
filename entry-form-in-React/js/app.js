@@ -1,3 +1,25 @@
+const displayMessage = (isConfirmed, isFormSubmitted) => {
+  if (isFormSubmitted) {
+    if (!isConfirmed) {
+      return <ValidationMessage txt="You can not enter!" />;
+    } else return <ValidationMessage txt="Wecome!" />;
+  }
+};
+
+const OrderForm = (props) => (
+  <form onSubmit={props.submit}>
+    <input
+      type="checkbox"
+      id="age"
+      onChange={props.change}
+      checked={props.isConfirmed}
+    />
+    <label htmlFor="age"> Yes, I am! </label>
+    <br /> <br />
+    <button type="submit">I want to buy ticket!</button>
+  </form>
+);
+
 class CheckboxCoinfirmation extends React.Component {
   state = {
     isConfirmed: false,
@@ -16,31 +38,17 @@ class CheckboxCoinfirmation extends React.Component {
     this.setState({ isFormSubmitted: true });
   };
 
-  displayMessage = () => {
-    if (this.state.isFormSubmitted) {
-      if (!this.state.isConfirmed) {
-        return <ValidationMessage txt="Ypu can not enter!" />;
-      } else return <ValidationMessage txt="Wecome!" />;
-    }
-  };
-
   render() {
-    const { isConfirmed } = this.state;
+    const { isConfirmed, isFormSubmitted } = this.state;
     return (
       <>
         <h1> Are you 21 - years old ? </h1>
-        <form onSubmit={this.handleFormSubmit}>
-          <input
-            type="checkbox"
-            id="age"
-            onChange={this.handleCheckboxChange}
-            checked={isConfirmed}
-          />
-          <label htmlFor="age"> Yes, I am! </label>
-          <br /> <br />
-          <button type="submit">I want to buy ticket!</button>
-        </form>
-        {this.displayMessage()}
+        <OrderForm
+          change={this.handleCheckboxChange}
+          submit={this.handleFormSubmit}
+          check={isConfirmed}
+        />
+        {displayMessage(isConfirmed, isFormSubmitted)}
       </>
     );
   }
