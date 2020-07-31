@@ -25,6 +25,7 @@ class CheckboxCoinfirmation extends React.Component {
   };
 
   render() {
+    const { isConfirmed } = this.state;
     return (
       <>
         <h1> Are you 21 - years old ? </h1>
@@ -33,7 +34,7 @@ class CheckboxCoinfirmation extends React.Component {
             type="checkbox"
             id="age"
             onChange={this.handleCheckboxChange}
-            checked={this.state.isConfirmed}
+            checked={isConfirmed}
           />
           <label htmlFor="age"> Yes, I am! </label>
           <br /> <br />
