@@ -19,8 +19,8 @@ class CheckboxCoinfirmation extends React.Component {
   displayMessage = () => {
     if (this.state.isFormSubmitted) {
       if (!this.state.isConfirmed) {
-        return <PositiveMessage />;
-      } else return <NegativeMessage />;
+        return <ValidationMessage txt="Ypu can not enter!" />;
+      } else return <ValidationMessage txt="Wecome!" />;
     }
   };
 
@@ -45,7 +45,6 @@ class CheckboxCoinfirmation extends React.Component {
   }
 }
 
-const PositiveMessage = () => <p> You can 't come in! </p>;
-const NegativeMessage = () => <p> Welcame! </p>;
+const ValidationMessage = (props) => <p>{props.txt} </p>;
 
 ReactDOM.render(<CheckboxCoinfirmation />, document.getElementById("root"));
