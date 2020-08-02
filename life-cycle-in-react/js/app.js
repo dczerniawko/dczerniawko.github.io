@@ -1,9 +1,35 @@
+class App extends React.Component {
+  state = {
+    clock: true,
+  };
+
+  handleClick = () => {
+    this.setState((state) => ({
+      active: !state.active,
+    }));
+  };
+
+  render() {
+    return (
+      <>
+        <SwitchButton active={this.state.active} click={this.handleClick} />
+        {this.state.active && <Clock />}
+      </>
+    );
+  }
+}
+
+const SwitchButton = (props) => (
+  <button onClick={props.click}>{props.active ? "On" : "Off"}</button>
+);
+
 class Clock extends React.Component {
   interval = "";
 
   state = {
     time: this.getTime(),
   };
+
   getTime() {
     const currentTime = new Date();
     return {
@@ -36,4 +62,4 @@ class Clock extends React.Component {
   }
 }
 
-ReactDOM.render(<Clock />, document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById("root"));
