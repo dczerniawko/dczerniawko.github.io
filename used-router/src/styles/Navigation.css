@@ -1,0 +1,37 @@
+ul {
+    list-style-type: none;
+}
+
+nav {
+    padding: 0 30px 30px 0;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    padding: 10px;
+    transition: .3s;
+}
+
+nav a:hover {
+    transform: translateX(20px);
+}
+
+nav a.active {
+    border-left: 10px gray solid;
+    transform: translateX(0)
+}
+
+nav li:nth-child(1) a.active {
+    border-left-color: red;
+}
+
+nav li:nth-child(2) a.active {
+    border-left-color: blue;
+}
+
+nav li:nth-child(3) a.active {
+    border-left-color: green;
+}

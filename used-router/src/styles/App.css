@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    flex-basis: 30vh;
+}
+
+main {
+    flex-grow: 1;
+    padding: 30px 0;
+    display: flex;
+}
+
+aside {
+    min-width: 240px;
+}
+
+.page {
+    flex-grow: 1;
+}
+
+footer {
+    background-color: #212121;
+    color: #ddd;
+    text-align: center;
+    padding: 10px 0;
+}
