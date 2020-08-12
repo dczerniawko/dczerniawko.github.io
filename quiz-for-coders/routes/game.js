@@ -63,6 +63,46 @@ function gameRoutes(app) {
       goodAnswers,
     });
   });
+
+  app.get("/help/friend", (req, res) => {
+    if (callToFriendUsed) {
+      res.json({
+        text: "Is used!",
+      });
+    }
+
+    callToFriendUsed = true;
+
+    const doesFriendKnowAnswer = Math.random() < 0.5;
+    const question = question[goodAnswers];
+
+    res.json({
+      text: doesFriendKnowAnswer
+        ? `Hmmm... Maybe: ${question.answers[question.correctAnswer]} `
+        : "I do not know...",
+    });
+  });
+
+  app.get("/help/half", (req, res) => {
+    if (halfOnHalfUsed) {
+      res.json({
+        text: "Is used!",
+      });
+    }
+
+    halfOnHalfUsed = true;
+
+    const question = question[goodAnswers];
+
+    const answersCopy = question.answers.filter(
+      (s, index) => index !== question.correctAnswer
+    );
+    answersCopy.splice(~~(Math, random() * answersCopy.length), 1);
+
+    res.json({
+      answersToRemove: answersCopy,
+    });
+  });
 }
 
 module.exports = gameRoutes;

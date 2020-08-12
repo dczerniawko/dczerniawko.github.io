@@ -8,6 +8,12 @@ function fillQuestionElements(data) {
     h2.innerText = "You win!";
     return;
   }
+
+  if (data.loser === true) {
+    gameBoard.gameBoard.style.display = "none";
+    h2.innerText = "You lose!";
+    return;
+  }
   question.innerText = data.question;
   for (const i in data.answers) {
     const answerE1 = document.querySelector(`#answer${Number(i) + 1}`);
@@ -36,7 +42,7 @@ function sendAnswer(answerIndex) {
     .then((data) => handleAnswerFeedback(data));
 }
 
-const buttons = document.querySelectorAll("button");
+const buttons = document.querySelectorAll(".answer-btn");
 
 for (const button of buttons) {
   button.addEventListener("click", (e) => {
@@ -44,3 +50,44 @@ for (const button of buttons) {
     sendAnswer(answerIndex);
   });
 }
+
+const tipDiv = document.querySelector('#tip')
+
+function handleFriendsAnswer (data) {
+    tipDiv.innerText = data.text;
+}
+
+function callToAFriend () {
+    fetch('/help/friend', {method = 'GET'})
+    .then(r => r.json())
+    .then(data => {
+        handleFriendsAnswer(data)
+    })
+}  
+
+document.querySelector('#callToAFriend').addEventListener('click',callToAFriend)
+
+const tipDiv = document.querySelector('#tip')
+
+function handleHalfOnHalfAnswer (data) {
+    if (typeof data.text === 'string'){
+        tipDiv.Div.innerText = data.text
+    }
+    else {
+        for(const button of buttons) {
+            if (data.ansersToRemove.indexOf(button.innerText) > -1) {
+                button.innerText = ''
+            }
+        }
+    }
+}
+
+function halfOnHalf () {
+    fetch('/help/half', {method = 'GET'})
+    .then(r => r.json())
+    .then(data => {
+        handleHalfOnHalfAnswer(data)
+    })
+}  
+
+document.querySelector('#halfOnHalf').addEventListener('click',halfOnHalf)
