@@ -1,10 +1,10 @@
-var createError = require("http-errors");
-var cookieSession = require("cookie-session");
-var express = require("express");
-var path = require("path");
-var cookieParser = require("cookie-parser");
-var logger = require("morgan");
-var config = require("./config");
+const createError = require("http-errors");
+const cookieSession = require("cookie-session");
+const express = require("express");
+const path = require("path");
+const cookieParser = require("cookie-parser");
+const logger = require("morgan");
+const config = require("./config");
 
 const MongoClient = require("mongodb").MongoClient;
 const uri = config.db;
@@ -14,13 +14,13 @@ client.connect((err) => {
   client.close();
 });
 
-var indexRouter = require("./routes/index");
-var newsRouter = require("./routes/news");
-var quizRouter = require("./routes/quiz");
-var adminRouter = require("./routes/admin");
-var apiRouter = require("./routes/api");
+const indexRouter = require("./routes/index");
+const newsRouter = require("./routes/news");
+const quizRouter = require("./routes/quiz");
+const adminRouter = require("./routes/admin");
+const apiRouter = require("./routes/api");
 
-var app = express();
+const app = express();
 
 // view engine setup
 app.set("views", path.join(__dirname, "views"));

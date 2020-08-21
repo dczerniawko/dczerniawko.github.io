@@ -1,6 +1,6 @@
-var express = require("express");
+const express = require("express");
 const { NotExtended } = require("http-errors");
-var router = express.Router();
+const router = express.Router();
 const News = require("../models/news");
 
 router.all("*", (req, res, next) => {
