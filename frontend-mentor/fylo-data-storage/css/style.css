@@ -15,7 +15,7 @@
 }
 
 .container {
-    background-image: url('/images/bg-desktop.png');
+    background-image: url('../images/bg-desktop.png');
     background-color: var(--neutral-very-dark-blue);
     background-repeat: no-repeat;
     background-size: 100% 50%;
