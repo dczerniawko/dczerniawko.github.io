@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: arial, sans-serif;
+}
+
+body {
+  min-height: 300vh;
+}
+
+header {
+  height: 80vh;
+  background-image: url('../img/soldier-with-dog.jpg'), url('../img/dog-in-army.jpg');
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  background-size: cover;
+  animation: slider 15s infinite linear;
+  opacity: 0;
+}
+
+h1 {
+  position: absolute;
+  top: 500px;
+  left: 0;
+  color: white;
+  font-size: 70px;
+  background-color: rgba(110, 111, 47, 60%);
+  width: 100%;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+section {
+  width: 80%;
+  margin: 100px auto 0;
+  line-height: 190%;
+}
+
+.bell {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 4px solid cadetblue;
+  font-size: 30px;
+  color: cadetblue;
+  text-align: center;
+  line-height: 45px;
+  transform: 0.2s;
+  cursor: pointer;
+}
+
+.bell:hover {
+  background-color: cadetblue;
+}
+
+.bell:hover i {
+  color: white;
+  animation: rotate .1s ease-in-out infinite alternate;
+  transform-origin: 50% 0;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(20deg);
+  }
+
+  100% {
+    transform: rotate(-20deg);
+  }
+}
+
+@keyframes slider {
+  0% {
+    background-image: url('../img/soldier-with-dog.jpg');
+    opacity: 0;
+  }
+
+  1% {
+    background-image: url('../img/soldier-with-dog.jpg');
+    opacity: 1;
+  }
+
+  50% {
+    background-image: url('../img/soldier-with-dog.jpg');
+    opacity: 1
+  }
+
+  50.1% {
+    background-image: url('../img/soldier-with-dog.jpg');
+    opacity: 0;
+  }
+
+  51% {
+    background-image: url('../img/dog-in-army.jpg');
+    opacity: 1;
+  }
+
+  100% {
+    background-image: url('../img/dog-in-army.jpg');
+    opacity: 1;
+  }
+}
