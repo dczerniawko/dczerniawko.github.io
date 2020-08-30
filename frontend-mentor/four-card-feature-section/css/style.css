@@ -161,4 +161,24 @@ img {
 }
 
 @media (max-width: 375px) {
+  .container {
+    min-width: 375px;
+  }
+
+  header {
+    text-align: center;
+    margin: 20px 20px 20px 20px;
+  }
+
+  .conatiner__content {
+    display: block;
+  }
+
+  .conatiner__content-left__column,
+  .conatiner__content-middle,
+  .conatiner__content-right__column {
+    width: auto;
+    margin: 20px 20px 20px 20px;
+    font-size: 24px;
+  }
 }
