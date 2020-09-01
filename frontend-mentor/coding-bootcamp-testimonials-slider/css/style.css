@@ -87,3 +87,47 @@ button:hover {
 .attribution a {
     color: hsl(228, 45%, 44%);
 }
+
+@media (max-width: 375px) {
+    body {
+        max-width: 375px;
+    }
+
+    .wrap {
+        flex-direction: column;
+        height: auto;
+        background-size: 90%, 25%, 25%;
+        background-position: top 10% left 30%, bottom 0 left 0, top 68% left 23%;
+    }
+
+    .right {
+        order: -1;
+    }
+
+    .photo img {
+        width: 70%;
+        position: absolute;
+        left: 10%;
+        top: 10%;
+    }
+
+    .text p {
+        font-size: 20px;
+        margin-top: 425px;
+        width: 190%;
+        margin-left: -90px;
+        text-align: center;
+    }
+
+    .person-bio {
+        font-size: 16px;
+        margin-left: -50px;
+        margin-bottom: 40px;
+    }
+
+    .attribution {
+        font-size: 11px;
+        margin-top: 10px
+    }
+
+}
