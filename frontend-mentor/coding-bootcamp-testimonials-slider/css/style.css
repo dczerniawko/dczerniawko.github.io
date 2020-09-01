@@ -53,7 +53,7 @@ body {
   color: hsl(240, 18%, 77%);
 }
 
-.photo img {
+.photo {
   box-shadow: 5px 5px 20px hsl(240, 18%, 77%);
 }
 
@@ -110,7 +110,7 @@ button:hover {
     order: -1;
   }
 
-  .photo img {
+  .photo {
     width: 70%;
     position: absolute;
     left: 10%;

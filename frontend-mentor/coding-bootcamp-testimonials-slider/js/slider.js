@@ -25,7 +25,7 @@ const nextBtn = document.querySelector(".next-btn");
 const text = document.querySelector(".text");
 const name = document.querySelector(".name");
 const position = document.querySelector(".position");
-const photo = document.querySelector(".foto");
+const photo = document.querySelector(".photo");
 
 const changeSlide = (e) => {
   if (e.currentTarget.className === "next-btn") slideActive++;
