@@ -1,148 +1,153 @@
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
 body {
-    height: 100vh;
-    max-width: 1444px;
-    font-family: 'Inter', sans-serif;
-    color: hsl(240, 38%, 20%);
+  height: 100vh;
+  max-width: 1444px;
+  font-family: "Inter", sans-serif;
+  color: hsl(240, 38%, 20%);
 }
 
 .wrap {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-image: url("../images/pattern-bg.svg"), url("../images/pattern-curve.svg"), url("../images/pattern-quotes.svg");
-    background-repeat: no-repeat;
-    background-position: top 46% left 95%, bottom 0 left 0, top 35% left 23%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("../images/pattern-bg.svg"),
+    url("../images/pattern-curve.svg"), url("../images/pattern-quotes.svg");
+  background-repeat: no-repeat;
+  background-position: top 46% left 95%, bottom 0 left 0, top 35% left 23%;
 }
 
 .left {
-    position: relative;
-    left: 5%;
-    width: 45%;
+  position: relative;
+  left: 5%;
+  width: 45%;
+  z-index: 1;
+}
+
+.right {
+  position: relative;
 }
 
 .text {
-    font-size: 30px;
-    letter-spacing: 1px;
-    font-weight: 300;
+  font-size: 30px;
+  letter-spacing: 1px;
+  font-weight: 300;
 }
 
 .person-bio {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
 
 .name {
-    font-weight: 700;
-    margin-right: 10px;
-    color: hsl(240, 38%, 20%);
+  font-weight: 700;
+  margin-right: 10px;
+  color: hsl(240, 38%, 20%);
 }
 
 .person-bio p {
-    color: hsl(240, 18%, 77%);
+  color: hsl(240, 18%, 77%);
 }
 
 .photo img {
-    box-shadow: 5px 5px 20px hsl(240, 18%, 77%);
+  box-shadow: 5px 5px 20px hsl(240, 18%, 77%);
 }
 
 button {
-    height: 50px;
-    width: 50px;
-    border-style: none;
-    transition: .4s;
-    box-shadow: 17px 5px 20px hsl(240, 18%, 77%);
+  height: 50px;
+  width: 50px;
+  border-style: none;
+  transition: 0.4s;
+  box-shadow: 17px 5px 20px hsl(240, 18%, 77%);
 }
 
 button:hover {
-    background-color: #222;
+  background-color: #222;
 }
 
 .prev-btn {
-    background-color: white;
-    border-radius: 50% 0 0% 50%;
-    position: absolute;
-    top: 80%;
-    left: 59%;
+  background-color: white;
+  border-radius: 50% 0 0% 50%;
+  position: absolute;
+  top: 95%;
+  left: 15%;
 }
 
 .next-btn {
-    background-color: white;
-    border-radius: 0 50% 50% 0;
-    position: absolute;
-    top: 80%;
-    left: 62%;
+  background-color: white;
+  border-radius: 0 50% 50% 0;
+  position: absolute;
+  top: 95%;
+  left: 24%;
 }
 
 .attribution {
-    font-size: 11px;
-    text-align: center;
+  font-size: 11px;
+  text-align: center;
 }
 
 .attribution a {
-    color: hsl(228, 45%, 44%);
+  color: hsl(228, 45%, 44%);
 }
 
 @media (max-width: 375px) {
-    body {
-        max-width: 375px;
-    }
+  body {
+    max-width: 375px;
+  }
 
-    .wrap {
-        flex-direction: column;
-        height: auto;
-        background-size: 90%, 25%, 25%;
-        background-position: top 10% left 30%, bottom 0 left 0, top 68% left 23%;
-    }
+  .wrap {
+    flex-direction: column;
+    height: auto;
+    background-size: 90%, 25%, 25%;
+    background-position: top 10% left 30%, bottom 0 left 0, top 68% left 23%;
+  }
 
-    .right {
-        order: -1;
-    }
+  .right {
+    order: -1;
+  }
 
-    .photo img {
-        width: 70%;
-        position: absolute;
-        left: 10%;
-        top: 10%;
-    }
+  .photo img {
+    width: 70%;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+  }
 
-    .text p {
-        font-size: 20px;
-        margin-top: 425px;
-        width: 190%;
-        margin-left: -90px;
-        text-align: center;
-    }
+  .text p {
+    font-size: 20px;
+    margin-top: 425px;
+    width: 190%;
+    margin-left: -90px;
+    text-align: center;
+  }
 
-    .person-bio {
-        font-size: 16px;
-        margin-left: -50px;
-        margin-bottom: 40px;
-    }
+  .person-bio {
+    font-size: 16px;
+    margin-left: -50px;
+    margin-bottom: 40px;
+  }
 
-    button {
-        height: 40px;
-        width: 40px;
-    }
+  button {
+    height: 40px;
+    width: 40px;
+  }
 
-    .prev-btn {
-        top: 42%;
-        left: 25%;
-    }
+  .prev-btn {
+    top: 42%;
+    left: 25%;
+  }
 
-    .next-btn {
-        top: 42%;
-        left: 35%;
-    }
+  .next-btn {
+    top: 42%;
+    left: 35%;
+  }
 
-    .attribution {
-        font-size: 11px;
-        margin-top: 10px
-    }
-
+  .attribution {
+    font-size: 11px;
+    margin-top: 10px;
+  }
 }
