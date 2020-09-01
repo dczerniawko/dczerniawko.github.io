@@ -125,6 +125,21 @@ button:hover {
         margin-bottom: 40px;
     }
 
+    button {
+        height: 40px;
+        width: 40px;
+    }
+
+    .prev-btn {
+        top: 42%;
+        left: 25%;
+    }
+
+    .next-btn {
+        top: 42%;
+        left: 35%;
+    }
+
     .attribution {
         font-size: 11px;
         margin-top: 10px
