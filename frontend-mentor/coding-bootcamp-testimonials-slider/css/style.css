@@ -67,7 +67,7 @@ button:hover {
     background-color: white;
     border-radius: 50% 0 0% 50%;
     position: absolute;
-    top: 75%;
+    top: 80%;
     left: 59%;
 }
 
@@ -75,7 +75,7 @@ button:hover {
     background-color: white;
     border-radius: 0 50% 50% 0;
     position: absolute;
-    top: 75%;
+    top: 80%;
     left: 62%;
 }
 
