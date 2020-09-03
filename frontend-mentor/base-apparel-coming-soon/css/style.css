@@ -1,0 +1,112 @@
+:root {
+    --desaturated-red: hsl(0, 36%, 70%);
+    --soft-red: hsl(0, 93%, 68%);
+    --dark-grayish-red: hsl(0, 6%, 24%);
+    --first-gradient: 135deg, rgba(255, 255, 255, 1) 0%, rgba(255, 245, 245, 1) 100%;
+    --second-gradient: 135deg, rgba(248, 191, 191, 1) 0%, rgba(238, 140, 140, 1) 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px
+}
+
+body {
+    min-width: 1440px;
+    height: 100vh;
+    background: linear-gradient(var(--first-gradient));
+}
+
+.wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    position: absolute;
+    top: 5%;
+    left: 10%;
+}
+
+h1 {
+    position: absolute;
+    left: 10%;
+    top: 20%;
+    font-size: 70px;
+    letter-spacing: 20px;
+    width: 50px;
+    text-transform: uppercase;
+    color: var(--desaturated-red);
+    font-weight: 300;
+}
+
+h1 span {
+    font-size: 70px;
+    letter-spacing: 20px;
+    width: 50px;
+    font-weight: 600;
+    color: black;
+}
+
+p {
+    width: 35%;
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    font-size: 22px;
+    line-height: 40px;
+    color: var(--desaturated-red);
+    font-weight: 200;
+}
+
+form {
+    position: absolute;
+    left: 10%;
+    top: 68%;
+    width: 50%;
+}
+
+input {
+    height: 65px;
+    border-radius: 30px;
+    outline: none;
+    width: 65%;
+    border: 1px solid var(--desaturated-red);
+    padding-left: 30px;
+}
+
+input::placeholder {
+    color: var(--desaturated-red);
+    opacity: .5;
+    font-size: 18px;
+}
+
+button {
+    height: 70px;
+    width: 110px;
+    background: linear-gradient(var(--second-gradient));
+    border-radius: 50px;
+    box-shadow: 0px 16px 18px -12px rgb(238, 140, 140);
+    cursor: pointer;
+    border: none;
+    position: absolute;
+    left: 55%;
+    top: -4%;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    position: absolute;
+    top: 90%;
+    left: 30%;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+}
