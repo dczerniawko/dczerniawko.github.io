@@ -1,0 +1,116 @@
+:root {
+    --blue: hsl(223, 87%, 63%);
+    --pale-blue: hsl(223, 100%, 88%);
+    --light-red: hsl(354, 100%, 66%);
+    --gray: hsl(0, 0%, 59%);
+    --very-dark-blue: hsl(209, 33%, 12%);
+
+}
+
+* {
+    margin: 10px 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 20px;
+    overflow-x: hidden;
+}
+
+body {
+    min-width: 1440px;
+}
+
+.wrap {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.title {
+    font-size: 45px;
+    font-weight: 300;
+    color: var(--gray);
+}
+
+.title span {
+    font-weight: 700;
+    font-size: 45px;
+    color: black;
+}
+
+.text {
+    font-weight: 300;
+    opacity: 0.8;
+}
+
+.email {
+    height: 55px;
+    width: 400px;
+    border-radius: 30px;
+    border: 1px solid var(--gray);
+    padding: 30px;
+    background: transparent;
+    outline: none;
+    opacity: 0.3;
+    margin-right: 15px;
+}
+
+.btn {
+    height: 65px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    background-color: var(--blue);
+    color: white;
+    padding-left: 60px;
+    padding-right: 60px;
+    box-shadow: 2px 11px 11px -11px var(--blue);
+}
+
+.error {
+    position: relative;
+    right: 8%;
+    color: red;
+    font-size: 16px;
+    display: none;
+}
+
+.fab {
+    color: var(--blue);
+    padding: 16px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+}
+
+.fa-facebook-f {
+    padding-left: 19px;
+    padding-right: 19px;
+}
+
+.footer {
+    font-size: 14px;
+    color: var(--gray);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    font-size: 11px;
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+}
+
+@media (max-width: 375px) {
+    body {
+        min-width: 375px;
+    }
+}
