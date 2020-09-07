@@ -175,8 +175,8 @@ button {
     line-height: 30px;
   }
 
-  form {
-    left: 8%;
+  .form {
+    left: 10%;
     margin-bottom: 40px;
   }
 
