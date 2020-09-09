@@ -23,25 +23,25 @@
       <div class="header">
         <p class="header--light"><span class="header--bold">Try it free 7 days</span> then $20/mo. thereafter</p>
       </div>
-      <div class="form">
+      <form>
         <input class="name" type="text" name="name" placeholder="First Name" aria-label="Input name">
-        <p class="error">First Name connot be empty</p>
+        <p id="name" class="error">First Name connot be empty</p>
 
         <input class="surname" type="text" name="surname" placeholder="Last Name" aria-label="Input surname">
-        <p class="error">Last Name connot be empty</p>
+        <p id="surname" class="error">Last Name connot be empty</p>
 
         <input class="email" type="text" name="email" placeholder="Email address" aria-label="Input email">
-        <p class="error">Looks like this is not an email</p>
+        <p id="email" class="error">Looks like this is not an email</p>
 
         <input class="password" type="password" name="password" placeholder="Password" aria-label="Input password">
-        <p class="error">Password connot be empty</p>
+        <p id="password" class="error">Password connot be empty</p>
 
-        <button class="btn" type="button">Claim your free trial</button>
+        <button class="btn" type="submit">Claim your free trial</button>
         <div class="terms">
           <p class="terms--black">By clicking the button, you are agreeing to our <span class="terms--red">Terms and
               Services</span></p>
         </div>
-      </div>
+      </form>
     </div>
   </div>
   <footer>

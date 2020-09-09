@@ -17,6 +17,7 @@
 body {
   min-width: 1440px;
   background-color: var(--red);
+  overflow-x: hidden;
 }
 
 .wrap {
@@ -59,7 +60,7 @@ body {
   letter-spacing: 0.5px;
 }
 
-.form {
+form {
   display: flex;
   flex-direction: column;
   background-color: white;
@@ -68,7 +69,7 @@ body {
 }
 
 input {
-  background-image: url("../images/icon-error.svg");
+  background-image: none;
   background-repeat: no-repeat;
   background-position: top 50% left 95%;
   height: 55px;
@@ -81,11 +82,16 @@ input {
   margin-top: 25px;
 }
 
+input:focus {
+  border: 1px solid rgba(0, 0, 0, 0.7);
+}
+
 .error {
   font-size: 13px;
   color: var(--red);
   position: relative;
   left: 61%;
+  display: none;
 }
 
 .btn {
@@ -101,6 +107,13 @@ input {
   letter-spacing: 2px;
   margin-bottom: 20px;
   margin-top: 25px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.btn:hover {
+  background-color: greenyellow;
+  color: black;
 }
 
 .terms--black {
@@ -163,7 +176,7 @@ input {
     font-size: 16px;
   }
 
-  .form {
+  form {
     padding: 20px 30px;
     width: 350px;
     margin-bottom: 10px;
