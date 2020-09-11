@@ -15,7 +15,7 @@
 }
 
 body {
-  min-width: 1440px;
+  max-width: 1440px;
   background-color: var(--red);
   overflow-x: hidden;
 }
@@ -139,7 +139,7 @@ input:focus {
   font-size: 13px;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 1024px) {
   body {
     min-width: 375px;
   }
@@ -168,10 +168,12 @@ input:focus {
     padding: 20px 70px;
     margin: 20px;
   }
+
   .header--light {
     font-size: 16px;
     text-align: center;
   }
+
   .header--bold {
     font-size: 16px;
   }
@@ -191,12 +193,14 @@ input:focus {
     font-size: 12px;
     left: 45%;
   }
+
   .btn {
     padding-left: 20px;
     padding-right: 20px;
     font-size: 15px;
     box-shadow: 0px 12px 5px -5px rgb(2, 99, 2);
   }
+
   footer {
     position: absolute;
     bottom: -50%;
