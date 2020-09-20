@@ -29,6 +29,10 @@ header {
   background-color: #f1fafc;
 }
 
+.mockup {
+  padding: 30px;
+}
+
 .row-top {
   display: flex;
   justify-content: space-between;
@@ -200,13 +204,24 @@ section {
   font-size: 21px;
 }
 
-footer {
+footer,
+.footer__section {
   background-color: var(--very-dark-cyan);
 }
 
 .content {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  color: var(--very-pale-cyan);
+  font-family: "Open Sans", sans-serif;
+  width: 80%;
+  margin-left: 150px;
+}
+
+.footer__logo {
+  margin-left: 150px;
+  margin-bottom: 50px;
 }
 
 .footer__pointer,
@@ -215,17 +230,76 @@ footer {
   display: inline;
 }
 
+.first-column {
+  width: 33%;
+}
+
+.pointer-row,
+.phone-row {
+  margin-bottom: 20px;
+}
+
+.pointer-row {
+  display: flex;
+}
+
+.location-pointer {
+  height: 23px;
+  padding: 5px 20px 0 0;
+  box-sizing: content-box;
+}
+
+.phone-pointer,
+.mail-pointer {
+  padding: 0 10px 0 0;
+  box-sizing: content-box;
+}
+
+.second-column,
+.third-column {
+  margin-top: -10px;
+  line-height: 50px;
+}
+
+.four-column {
+  margin-right: 100px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.fab {
+  padding: 11px;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  margin-right: 8px;
+}
+
+.fa-facebook-f {
+  padding-left: 13px;
+  padding-right: 13px;
+}
+
+.copyright {
+  color: white;
+  font-size: 14px;
+  text-align: right;
+  margin-top: 30px;
+  margin-right: 30px;
+  opacity: 0.8;
+}
+
 .attribution {
-  font-size: 16px;
+  font-size: 13px;
   text-align: center;
-  color: bisque;
+  color: white;
+  padding: 20px 0 0 0;
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
-  color: rgb(214, 154, 81);
+  color: bisque;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 13px;
 }
 
 @media (max-width: 375px) {
