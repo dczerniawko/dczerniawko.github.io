@@ -279,8 +279,89 @@ footer,
   font-size: 13px;
 }
 
-@media (max-width: 735px) {
+@media (max-width: 768px) {
   body {
     min-width: 375px;
+  }
+
+  header {
+    background-image: url("../images/bg-hero-mobile.svg");
+  }
+
+  .row-top {
+    display: flex;
+    max-width: 100vw;
+    padding: 20px 0;
+  }
+
+  .row-top__logo {
+    margin-left: 20px;
+    margin-right: 10px;
+    width: 30%;
+  }
+
+  .row-top__btn {
+    font-size: 10px;
+    height: 30px;
+    padding: 0 10px;
+    width: 20%;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .row-bottom {
+    width: 100%;
+    flex-direction: column;
+    padding: 0 10px;
+  }
+
+  .row-bottom__left {
+    width: 90%;
+    padding: 0 10px;
+    margin-top: 30px;
+  }
+
+  .row-bottom__title {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .row-bottom__left p {
+    text-align: center;
+    font-size: 16px;
+    padding: 0;
+  }
+
+  .row-bottom__btn--pink {
+    margin-left: 25px;
+  }
+
+  .header__mockup {
+    width: 100%;
+    margin-top: 30px
+  }
+
+  .first-article,
+  .second-article,
+  .third-article {
+    flex-direction: column-reverse;
+    width: 90%;
+  }
+
+  .main__img {
+    width: 80%;
+  }
+
+  h2 {
+    text-align: center;
+    margin-left: 0;
+    font-size: 24px;
+  }
+
+  .main__text {
+    margin-left: 20px;
+    text-align: center;
+    width: 90%;
+    padding: 0 0 20px 0;
   }
 }
