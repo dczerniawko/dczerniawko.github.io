@@ -25,7 +25,7 @@ header {
   background-image: url("../images/bg-hero-desktop.svg");
   background-repeat: no-repeat;
   background-color: #f1fafc;
-  height: 440px;
+  height: 550px;
 }
 
 .row-top {
@@ -37,14 +37,14 @@ header {
 }
 
 .row-top__logo {
-  margin-left: 240px;
-  width: 11%;
+  margin-left: 170px;
+  width: 15%;
 }
 
 .row-top__btn {
-  margin-right: 250px;
-  margin-bottom: 20px;
-  height: 35px;
+  margin-right: 200px;
+  margin-bottom: 40px;
+  height: 45px;
   border-radius: 30px;
   border: none;
   outline: none;
@@ -66,8 +66,8 @@ header {
 }
 
 .row-bottom__left {
-  width: 50%;
-  padding: 0px 100px;
+  width: 45%;
+  padding: 0px 60px;
 }
 
 .row-bottom__title {
@@ -101,7 +101,7 @@ header {
 
 .header__mockup {
   padding: 10px;
-  width: 35%;
+  width: 45%;
   margin-right: 80px;
 }
 
@@ -150,7 +150,7 @@ h2 {
   width: 60%;
 }
 
-section {
+.popup {
   position: relative;
   left: 50%;
   transform: translate(-50%, -50%);
