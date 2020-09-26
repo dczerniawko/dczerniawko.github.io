@@ -1,0 +1,143 @@
+:root {
+    --very-dark-magenta: hsl(300, 43%, 22%);
+    --soft-pink: hsl(333, 80%, 67%);
+    --dark-grayish-magenta: hsl(303, 10%, 53%);
+    --light-grayish-magenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1440px;
+    font-family: 'Spartan', sans-serif;
+}
+
+.wrap {
+    padding: 100px;
+    background-image: url("../images/bg-pattern-top-desktop.svg"),
+        url("../images/bg-pattern-bottom-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: top left, bottom 0 left 0;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+}
+
+.content {
+    width: 30%;
+}
+
+h1 {
+    color: var(--very-dark-magenta);
+    font-size: 2rem;
+    margin: 15px;
+}
+
+p {
+    font-size: 0.8rem;
+    line-height: 20px;
+    color: var(--dark-grayish-magenta);
+    margin: 15px;
+}
+
+.reviews,
+.report-guru,
+.best-tech {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--light-grayish-magenta);
+    margin: 15px;
+    color: var(--very-dark-magenta);
+    font-weight: 700;
+    font-size: 0.8rem;
+    height: 50px;
+    width: 450px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.report-guru {
+    margin-left: 35px;
+}
+
+.best-tech {
+    margin-left: 60px;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 300px;
+}
+
+.Smith__opinion,
+.Roberts__opinion,
+.Wallace__opinion {
+    width: 30%;
+    background-color: var(--very-dark-magenta);
+    border-radius: 5px;
+    padding: 30px;
+}
+
+.person-avatar {
+    border-radius: 50%;
+    margin: 10px 10px -25px;
+    width: 15%;
+}
+
+.person-name {
+    display: inline;
+}
+
+.person-data span {
+    color: var(--soft-pink);
+    margin-left: 4rem;
+}
+
+.quote {
+    margin-top: 20px;
+    color: var(--white);
+}
+
+.Smith__opinion {
+    align-self: flex-start;
+}
+
+.Roberts__opinion {
+    align-self: center;
+}
+
+.Wallace__opinion {
+    align-self: flex-end;
+}
+
+footer {
+    text-align: center;
+}
+
+.author {
+    font-size: 11px;
+    color: var(--very-dark-magenta);
+    margin-top: 10px;
+}
+
+.author a {
+    color: var(--soft-pink);
+    text-decoration: none;
+}
+
+@media (max-width: 1024px) {
+    body {
+        min-width: 375px;
+    }
+}
