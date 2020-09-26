@@ -77,7 +77,7 @@ p {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 300px;
+  height: 400px;
 }
 
 .Smith__opinion,
@@ -91,17 +91,24 @@ p {
 
 .person-avatar {
   border-radius: 50%;
-  margin: 10px 10px -25px;
-  width: 15%;
+  width: 20%;
 }
 
 .person-name {
   display: inline;
 }
 
+.person-data {
+  display: flex;
+  align-items: center;
+}
+
+.person-about {
+  margin-top: 15px;
+}
+
 .person-data span {
   color: var(--soft-pink);
-  margin-left: 4rem;
 }
 
 .quote {
@@ -140,6 +147,7 @@ footer {
   body {
     min-width: 375px;
   }
+
   .wrap {
     background-image: url("../images/bg-pattern-top-mobile.svg"),
       url("../images/bg-pattern-bottom-mobile.svg");
@@ -154,6 +162,7 @@ footer {
     flex-direction: column;
     width: 100%;
   }
+
   .content {
     width: 100%;
   }
@@ -186,14 +195,12 @@ footer {
   .bottom {
     display: block;
   }
+
   .Smith__opinion,
   .Roberts__opinion,
   .Wallace__opinion {
     width: 95%;
     margin: 10px;
-  }
-
-  .person-name {
   }
 
   footer {
