@@ -140,8 +140,9 @@ h2 {
 }
 
 .main__img {
+  position: relative;
   padding: 10px;
-  width: 100%;
+  width: 50%;
 }
 
 .popup {
