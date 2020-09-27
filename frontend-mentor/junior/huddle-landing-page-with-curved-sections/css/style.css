@@ -139,6 +139,11 @@ h2 {
   margin-bottom: 20px;
 }
 
+.main__img {
+  padding: 10px;
+  width: 100%;
+}
+
 .popup {
   margin: 100px auto;
 }
