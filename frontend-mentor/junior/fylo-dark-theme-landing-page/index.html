@@ -8,6 +8,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
   <link rel="stylesheet" href="css/style.css">
 
   <title>Frontend Mentor | Fylo landing page with dark theme and features grid</title>
@@ -101,57 +102,66 @@
     <img class="quote" src="images/bg-quotes.png">
     <div class="quotes-row">
       <div class="quote-first">
-        <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has
+        <p class="quote-text">Fylo has improved our team productivity by an order of magnitude. Since making the switch
+          our team has
           become a well-oiled collaboration machine.</p>
         <div class="person-data">
           <img class="person-photo" src="images/profile-1.jpg" alt="Person avatar">
           <div class="person-name">
-            Satish Patel
-          </div>
-          <div class="person-position">
-            Founder & CEO, Huddle
+            <p class="person-name__testimental"><span>Satish Patel</span></p>
+            <p class="person-name__position">Founder & CEO, Huddle</p>
           </div>
         </div>
       </div>
       <div class="quote-second">
-        <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has
+        <p class="quote-text">Fylo has improved our team productivity by an order of magnitude. Since making the switch
+          our team has
           become a well-oiled collaboration machine.</p>
         <div class="person-data">
           <img class="person-photo" src="images/profile-2.jpg" alt="Person avatar">
           <div class="person-name">
-            Bruce McKenzie
-          </div>
-          <div class="person-position">
-            Founder & CEO, Huddle
+            <p class="person-name__testimental"><span>Bruce McKenzie</span></p>
+            <p class="person-name__position">Founder & CEO, Huddle</p>
           </div>
         </div>
       </div>
       <div class="quote-third">
-        <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has
+        <p class="quote-text">Fylo has improved our team productivity by an order of magnitude. Since making the switch
+          our team has
           become a well-oiled collaboration machine.</p>
         <div class="person-data">
           <img class="person-photo" src="images/profile-3.jpg" alt="Person avatar">
           <div class="person-name">
-            Iva Boyd
-          </div>
-          <div class="person-position">
-            Founder & CEO, Huddle
+            <p class="person-name__testimental"><span>Iva Boyd</span></p>
+            <p class="person-name__position">Founder & CEO, Huddle</p>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="popup">
-    <h2>Get early access today</h2>
-    <p> It only takes a minute to sign up and our free starter tier is extremely generous. If you have any
-      questions, our support team would be happy to help you.</p>
-    <input class="email" type="text" name="email" placeholder="Enter your email" aria-label="Input email">
-    <button class="btn--blue">Get Started For Free</button>
-  </div>
   <footer>
+    <div class="popup">
+      <h2>Get early access today</h2>
+      <p class="popup__text"> It only takes a minute to sign up and our free starter tier is extremely generous. If you
+        have any
+        questions, our support team would be happy to help you.</p>
+      <div class="input-btn">
+        <input class="email" type="text" name="email" placeholder="Enter your email" aria-label="Input email">
+        <button class="btn--blue inline">Get Started For Free</button>
+      </div>
+    </div>
+
     <img class="footer__logo" src="images/logo.svg" alt="White version brand logo">
     <div class="footer__content">
-      <div class="footer__content__first-column">
+      <div class="footer__content__first-column"></div>
+      <div class="footer__content__pointer-row">
+        <img class="footer__content__location-pointer" src="images/icon-location.svg" alt="Location pointer"></i>
+        <p class="footer__content__pointer-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod
+          tempor
+          incididunt ut labore et dolore magna aliqua</p>
+      </div>
+      <div class="footer__content__second-column">
         <div class="footer__content__phone-row">
           <img class="footer__content__phone-pointer" src="images/icon-phone.svg" alt="Phone icon"></i>
           <p class="footer__content__phone__text"> Phone: +1-543-123-4567</p>
@@ -161,13 +171,13 @@
           <p class="footer__content__mail__text"> example@fylo.com</p>
         </div>
       </div>
-      <div class="footer__content__second-column">
+      <div class="footer__content__third-column">
         <p>About Us</p>
         <p>Jobs</p>
         <p>Press</p>
         <p>Blog</p>
       </div>
-      <div class="footer__content__third-column">
+      <div class="footer__content__fourth-column">
         <p>Contact Us</p>
         <p>Terms</p>
         <p>Privacy</p>
