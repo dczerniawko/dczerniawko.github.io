@@ -1,3 +1,3 @@
 <p align="center">
-  <img src="frontend-roadmap/frontendDiagram.svg">
+  <img src="sandbox/frontend-roadmap/frontendDiagram.svg">
 </p>
