@@ -1,0 +1,186 @@
+:root {
+  --strong-cyan: hsl(171, 66%, 44%);
+  --light-blue: hsl(233, 100%, 69%);
+  --dark-grayish-blue: hsl(210, 10%, 33%);
+  --grayish-blue: hsl(201, 11%, 66%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1440px;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 18px;
+  text-align: center;
+}
+
+header {
+  background-image: url("../images/bg-header-desktop.png");
+  background-repeat: no-repeat;
+  height: 55vh;
+}
+
+.header__logo {
+  margin: 10% 0 3% 0;
+}
+
+h1 {
+  padding: 10px;
+}
+
+p {
+  padding: 10px 410px;
+  margin-bottom: 35px;
+  font-size: 1.1rem;
+  opacity: 0.4;
+}
+
+.btn {
+  height: 45px;
+  border-radius: 30px;
+  padding: 0 50px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 14px;
+}
+
+.green {
+  background-color: var(--strong-cyan);
+  box-shadow: 0px 0px 5px 0px hsl(171, 66%, 44%);
+}
+
+.blue {
+  background-color: var(--light-blue);
+  box-shadow: 0px 0px 5px 0px hsl(233, 100%, 69%);
+}
+
+h2 {
+  padding: 10px;
+}
+
+.main__row {
+  display: flex;
+  text-align: left;
+  justify-content: space-between;
+}
+
+.desktop {
+  position: relative;
+  left: -2%;
+}
+
+.options {
+  margin-top: 5%;
+}
+
+.option {
+  padding: 20px;
+  width: 75%;
+  margin-left: 10%;
+}
+
+.option__title,
+.option__text {
+  padding: 5px;
+  margin: 0;
+}
+
+.access {
+  margin-top: 10%;
+}
+
+.devices {
+  margin-top: 3%;
+}
+
+.charge {
+  padding: 5% 0 1% 0;
+}
+
+.additional__options {
+  display: flex;
+  padding: 8% 10px;
+}
+
+.additional__option {
+  padding: 0 20px;
+  width: 33%;
+}
+
+.additional__option--text {
+  padding: 20px;
+  line-height: 30px;
+}
+
+.additional__option--icon {
+  padding: 50px;
+  width: 136px;
+}
+
+section {
+  padding: 5% 0 15% 0;
+}
+
+.partners {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 0 10% 0;
+}
+
+footer {
+  background-color: #ddd;
+  color: var(--grayish-blue);
+  text-align: left;
+}
+
+.columns {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.column {
+  margin-top: 2%;
+}
+
+.logo__column {
+  padding: 30px;
+}
+
+li {
+  list-style: none;
+  line-height: 60px;
+}
+
+.socials {
+  margin-top: 5%;
+  color: black;
+  font-size: 24px;
+}
+
+.fab {
+  padding: 5px;
+}
+
+.author {
+  font-size: 11px;
+  text-align: center;
+  margin: 0;
+}
+
+.author a {
+  text-decoration: none;
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 1024px) {
+  body {
+    min-width: 375px;
+  }
+}
