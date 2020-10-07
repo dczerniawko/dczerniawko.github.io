@@ -182,5 +182,81 @@ li {
 @media (max-width: 1024px) {
   body {
     min-width: 375px;
+    overflow-x: hidden;
+  }
+
+  header {
+    background-image: url("../images/bg-header-mobile.png");
+    background-repeat: no-repeat;
+    padding: 10px;
+    height: 20vh;
+  }
+
+  .header__logo {
+    margin: 40% 0 5% 0;
+  }
+
+  h1 {
+    padding: 20px;
+    font-size: 2rem;
+  }
+
+  p {
+    padding: 30px;
+    font-size: 1rem;
+    line-height: 30px;
+  }
+
+  .green {
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    padding: 20px;
+  }
+
+  .main__row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .desktop {
+    left: 5%;
+    width: 90%;
+  }
+
+  .devices {
+    width: 90%;
+  }
+
+  .additional__options {
+    flex-direction: column;
+  }
+
+  .additional__option {
+    width: 100%;
+  }
+
+  .partners {
+    flex-direction: column;
+  }
+
+  .partners img {
+    padding: 30px;
+  }
+
+  .columns {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .logo__column {
+    position: relative;
+    left: 25%;
+  }
+
+  .column,
+  .socials {
+    width: 100%;
   }
 }
