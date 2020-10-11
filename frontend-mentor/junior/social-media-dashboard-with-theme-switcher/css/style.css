@@ -6,7 +6,7 @@
     --twitter: hsl(203, 89%, 53%);
     --instagram: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
     --youtube: hsl(348, 97%, 39%);
-    --toggle: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%);
+    --toggle-gradient: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%);
 
     --toggle: hsl(230, 22%, 74%);
     --very-dark-blueBG: hsl(230, 17%, 14%);
@@ -43,6 +43,7 @@ header{
     justify-content: space-between;
     align-items: center;
     text-align: left;
+    padding: 10px 25px;
 }
 
 .right{
@@ -119,11 +120,12 @@ main{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 10px;
+   
 }
 
 h2{
     text-align: left;
+    margin-left: 25px;
 }
 
 .box{
@@ -140,7 +142,7 @@ h2{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 25px;
+    padding: 20px;
     margin-top: 20px;
     background-color: var(--very-pale-blue-top-BG-pattern);
 }
@@ -172,6 +174,48 @@ h2{
     border-top: 4px solid var(--youtube);
 }
 
+.icon{
+    padding-right: 8px;
+}
+
+.logo p{
+    opacity: 0.7;
+}
+
+.number{
+    font-size: 3rem;
+    font-weight: 700;
+    padding-top: 10px
+}
+
+.followers{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 0.7rem;
+    opacity: 0.7;
+    margin-bottom: 35px;
+}
+
+.up{
+    color: var(--lime-green);
+    padding-left: 5px;
+}
+
+.down{
+    color: var(--bright-red);
+    padding-left: 5px;
+}
+
+.box--small{
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.top, .bottom{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
 
 
 
