@@ -6,7 +6,7 @@
     --twitter: hsl(203, 89%, 53%);
     --instagram: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
     --youtube: hsl(348, 97%, 39%);
-    --toggle-gradient: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%);
+    --toggle-gradient: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
 
     --toggle: hsl(230, 22%, 74%);
     --very-dark-blueBG: hsl(230, 17%, 14%);
@@ -69,7 +69,7 @@ header{
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ccc;
+    background-color: var(--toggle);
     -webkit-transition: .4s;
     transition: .4s;
 }
@@ -87,17 +87,13 @@ header{
 }
 
 input:checked+.slider {
-    background-color: #2196F3;
-}
-
-input:focus+.slider {
-    box-shadow: 0 0 1px #2196F3;
+    background: var(--toggle-gradient);
 }
 
 input:checked+.slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(25px);
 }
 
 .slider.round {
