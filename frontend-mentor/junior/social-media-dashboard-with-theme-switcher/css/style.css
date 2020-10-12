@@ -110,14 +110,14 @@ input:checked+.slider:before {
 }
 
 .main__row,
-section{
+.section{
     display: grid;
     grid-gap: 0.1rem;
     grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
     margin: 2rem 0;
 }
 
-h2{
+.subtitle{
     text-align: left;
     color: var(--text);
 }
