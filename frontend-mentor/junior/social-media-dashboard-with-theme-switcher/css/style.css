@@ -24,31 +24,28 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    max-width: 1440px;
-    text-align: center;
-    font-family: 'Inter', sans-serif;
-    font-size: 14px;
+    max-width: 1200px;
+    margin: 1.5rem auto;
     background-color: var(--white-BG);
-}
-
-.wrap{
-    padding: 50px;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    font-size: 14px;
 }
 
 header{
     display: flex;
     justify-content: space-between;
-    align-items: center;
     text-align: left;
-    padding: 10px 25px;
 }
 
 .right{
     display: flex;
     align-items: center;
+    padding: 0 25px;
 }
 
 .switch {
@@ -56,7 +53,7 @@ header{
     display: inline-block;
     width: 60px;
     height: 34px;
-    margin-left: 10px;
+    margin:0 10px;
 }
 
 .switch input {
@@ -104,33 +101,28 @@ input:checked+.slider:before {
 }
 
 .slider.round {
-    border-radius: 34px;
+    border-radius: 35px;
 }
 
 .slider.round:before {
     border-radius: 50%;
 }
 
-main{
-    margin-bottom: 40px;
-}
-
 .main__row,
-.section__row{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-   
+section{
+    display: grid;
+    grid-gap: 0.1rem;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    margin: 2rem 0;
 }
 
 h2{
     text-align: left;
-    margin-left: 25px;
 }
 
 .box{
-    height: 200px;
-    width: 200px;
+    height: 260px;
+    width: 260px;
 }
 
 .fb,
@@ -148,28 +140,30 @@ h2{
 }
 
 .box--small{
-    height: 100px;
-    width: 200px;
+    height: 130px;
+    width: 260px;
 }
 
 .logo,
 .top,
 .graph{
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
 .fb{
     border-top: 4px solid var(--facebook);
 }
+
 .tw{
     border-top: 4px solid var(--twitter);
 }
+
 .insta{
     border-image: linear-gradient(to right,hsl(37,97%,70%) , hsl(329,70%,58%)) 1;
     border-top: 4px solid;
 }
+
 .yt{
     border-top: 4px solid var(--youtube);
 }
@@ -178,7 +172,8 @@ h2{
     padding-right: 8px;
 }
 
-.logo p{
+.logo p,
+.box--small__title{
     opacity: 0.7;
 }
 
@@ -208,21 +203,20 @@ h2{
 
 .box--small{
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .top, .bottom{
     width: 90%;
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
 }
 
-
-
-
-
-
-
+.amount{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
 
 .author {
     font-size: 11px;
@@ -231,4 +225,5 @@ h2{
 
 .author a {
     color: hsl(228, 45%, 44%);
+    text-decoration: none;
 }
