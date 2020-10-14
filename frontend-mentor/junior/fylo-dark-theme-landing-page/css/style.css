@@ -9,7 +9,7 @@
 }
 
 * {
-  margin: 0;
+  margin: auto;
   padding: 0;
   box-sizing: border-box;
 }
@@ -20,6 +20,7 @@ body {
   font-size: 14px;
   text-align: center;
   color: var(--white);
+  background-color: var(--dark-blue-intro-main)
 }
 
 header {
@@ -174,7 +175,7 @@ a {
 
 .popup {
   position: relative;
-  left: 50%;
+  left: 30%;
   transform: translate(-50%, -80%);
   width: 55%;
   border-style: solid;
