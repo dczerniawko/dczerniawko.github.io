@@ -21,7 +21,7 @@ body {
 header {
   background-image: url("../images/bg-header-desktop.png");
   background-repeat: no-repeat;
-  height: 55vh;
+  height: 600px;
 }
 
 .header__logo {
@@ -188,16 +188,11 @@ li {
   header {
     background-image: url("../images/bg-header-mobile.png");
     background-repeat: no-repeat;
-    padding: 10px;
-    height: 20vh;
-  }
-
-  .header__logo {
-    margin: 40% 0 5% 0;
+    background-position: top left 50%;
   }
 
   h1 {
-    padding: 20px;
+    padding: 10px;
     font-size: 2rem;
   }
 
@@ -221,7 +216,7 @@ li {
   }
 
   .desktop {
-    left: 5%;
+    left: 0;
     width: 90%;
   }
 
@@ -252,7 +247,6 @@ li {
 
   .logo__column {
     position: relative;
-    left: 25%;
   }
 
   .column,
