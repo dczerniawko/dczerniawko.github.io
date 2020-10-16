@@ -298,7 +298,7 @@ footer {
   }
 
   header {
-    height: 800px;
+    height: 750px;
   }
 
   nav {
@@ -316,8 +316,8 @@ footer {
   }
 
   .header__content img {
-    width: 100%;
-    padding: 20px;
+    width: 50%;
+    padding: 30px;
   }
 
   .header__text {
@@ -411,6 +411,10 @@ footer {
   .inline {
     width: 300px;
     margin-bottom: 20px;
+  }
+
+  .input-btn{
+    margin: auto;
   }
 
   .footer__content {
