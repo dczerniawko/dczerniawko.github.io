@@ -40,6 +40,7 @@ body {
     background-position: top 65% left -850%;
     background-color: var(--light-grayish-blue);
     padding: 30px;
+    border-radius: 10px;
 }
 
 .content__left,
@@ -54,7 +55,7 @@ body {
 
 .box{
     position: absolute;
-    top: 30%;
+    top: 50%;
     left: 30%
 }
 
