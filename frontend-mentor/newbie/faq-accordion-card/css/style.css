@@ -76,6 +76,10 @@ button{
     cursor: pointer;
 }
 
+.rotate{
+    transform: rotateX(180deg);
+}
+
 .question{
     display: flex;
     justify-content: space-between;
