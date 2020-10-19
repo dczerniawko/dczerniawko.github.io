@@ -34,6 +34,12 @@ header{
 
 .logo{
     margin-left: 0;
+    height: 30px;
+}
+
+.hamburger,
+.navigation{
+    display: none;
 }
 
 header, 
@@ -156,14 +162,113 @@ li:hover{
     color: hsl(228, 45%, 44%); 
 }
 
-@media (max-width: 600px) {
-
-    body{
-        max-width: 375px;
-    }
-
+@media (max-width: 1035px) {
     .content{
         flex-direction: column-reverse;
+    }
+
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .hamburger, .navigation {
+        transition: transform .3s .1s ease-in-out;
+    }
+
+    .hamburger {
+        padding: 10px;
+        display: inline-block;
+        cursor: pointer;
+        background-color: transparent;
+        border: 0;
+        margin: 0;
+    }
+    
+    .hamburger__box {
+        width: 35px;
+        height: 24px;
+        display: inline-block;
+        position: relative;
+    }
+
+    .hamburger__inner {
+        width: 100%;
+        height: 3px;
+        background-color: var(--dark-grayish-blue);
+        position: absolute;
+    }
+    
+    .hamburger__inner::before,
+    .hamburger__inner::after {
+        width: 100%;
+        height: 3px;
+        background-color: var(--dark-grayish-blue);
+        position: absolute;
+        content: '';
+        right: 0;
+        transition: transform .2s .2s ease-in-out;
+    } 
+    
+    .hamburger__inner::before {
+        top: -10px;
+    }
+    
+    .hamburger__inner::after {
+        top: 10px;
+    }
+
+    .hamburger--active {
+        transform: translateX(-160px);
+    }
+    
+    .hamburger--active .hamburger__inner {
+        background-color: transparent;
+    }
+    
+    .hamburger--active .hamburger__inner:before {
+        transform: translateY(10px) rotate(45deg);
+    }
+    
+    .hamburger--active .hamburger__inner:after {
+        transform: translateY(-10px) rotate(-45deg);
+    }
+
+    .navigation {
+        display: block;
+        height: 100vh;
+        width: 200px;
+        background-color: var(--grayish-blue);
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translateX(200px);
+      }
+      
+    .navigation--active {
+        transform: translateX(50px);
+    }
+      
+    .navigation__list {
+        position: absolute;
+        margin-top: 50px;
+        margin-left: 10px;
+        text-align: left;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+      
+    .navigation__item {
+        margin:20px 10px;
+        margin-bottom: 20px;
+    }
+
+    nav{
+        display: none;
     }
 
     .left,
@@ -190,11 +295,6 @@ li:hover{
     .devices{
         padding: 10px;
         margin: 50px 5px
-    }
-
-    header{
-        margin:20px;
-        display: inline-block;
     }
 
     .sticky{
