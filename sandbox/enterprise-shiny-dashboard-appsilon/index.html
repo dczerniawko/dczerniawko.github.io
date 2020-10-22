@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="We deliver software development and ML solutions for Fortune 500 companies. We are an RStudio Full Service Certified Partner and global leaders in R Shiny.">
+  <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="keywords" content="data science, machine learning, deep learning, computer vision">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/appsilon-favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Enterprise Shiny Dashboards | Appsilon</title>
+</head>
+
+<body>
+  <div class="wrap">
+
+    <header>
+      <div class="left">
+        <h1>Enterprise Shiny Dashboards</h1>
+      </div>
+      <div class="right">
+        <p class="dark-style">Dark Mode</p>
+        <label class="switch">
+          <input class="checkbox" type="checkbox">
+          <span class="slider round"></span>
+        </label>
+      </div>
+    </header>
+    
+      <div class="grid">
+        <div class="box">
+          <p class="amount">&dollar; 2 674 862</p>
+          <div class="percent-stats flex">
+            <p class="percent-stats__text">Total profit</p>
+            <p class="percent-stats__result plus">+ 4,5%</p>
+          </div>
+          <div class="bottom-panel flex">
+            <button class="bottom-panel__button btn">Monthly stats &#9660</button>
+            <div class="bottom-panel__menu navigation">
+               <ul class="navigation__list">
+                <li class="navigation__item">Daily</li>
+                <li class="navigation__item">Monthly</li>
+                <li class="navigation__item">Quarterly</li>
+                <li class="navigation__item">Annual</li>
+              </ul>
+            </div>
+            <div class="icon blue">
+              <i class="fas fa-database"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <p class="amount">657</p>
+          <div class="percent-stats">
+            <p class="percent-stats__text">Active user</p>
+            <p class="percent-stats__result plus">+ 8,5%</p>
+          </div>
+          <div class="bottom-panel">
+            <button class="bottom-panel__button btn">Monthly stats &#9660</button>
+            <div class="bottom-panel__menu navigation">
+               <ul class="navigation__list">
+                <li class="navigation__item">Daily</li>
+                <li class="navigation__item">Monthly</li>
+                <li class="navigation__item">Quarterly</li>
+                <li class="navigation__item">Annual</li>
+              </ul>
+            </div>
+            <div class="icon green">
+              <i class="fas fa-user"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <p class="amount">245</p>
+          <div class="percent-stats">
+            <p class="percent-stats__text">New orders</p>
+            <p class="percent-stats__result plus">+ 3,9%</p>
+          </div>
+          <div class="bottom-panel">
+            <button class="bottom-panel__button btn">Monthly stats &#9660</button>
+            <div class="bottom-panel__menu navigation">
+               <ul class="navigation__list">
+                <li class="navigation__item">Daily</li>
+                <li class="navigation__item">Monthly</li>
+                <li class="navigation__item">Quarterly</li>
+                <li class="navigation__item">Annual</li>
+              </ul>
+            </div>
+            <div class="icon orange">
+              <i class="fas fa-border-none"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <p class="amount">12</p>
+          <div class="percent-stats">
+            <p class="percent-stats__text">Open complaints</p>
+            <p class="percent-stats__result minus">- 5,3%</p>
+          </div>
+          <div class="bottom-panel">
+            <button class="bottom-panel__button btn" type="button">Monthly stats &#9660</button>
+            <div class="bottom-panel__menu navigation">
+               <ul class="navigation__list">
+                <li class="navigation__item">Daily</li>
+                <li class="navigation__item">Monthly</li>
+                <li class="navigation__item">Quarterly</li>
+                <li class="navigation__item">Annual</li>
+              </ul>
+            </div>
+            <div class="icon red">
+              <i class="fas fa-ellipsis-h"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="box rectangle">
+            <div class="rectangle-nav">
+              <p class="rectangle-nav__title">Production</p>
+              <div class="rectangle-nav__icons">
+                <i class="fa fa-sync-alt"></i>
+                <i class="fa fa-times"></i>
+                <i class="fa fa-chevron-down"></i>
+            </div>
+          </div>
+          <img class="rectangle-graph" src="images/production-graph.png" alt="Graph presents monthly production">
+          <div class="test">
+            <input placeholder="JUNE 2018 &#9660" class="textbox-n" type="text" onfocus="(this.type='date')" id="date">
+            <div class="popup-button">
+              <button class="buttons-panel__btn btn" onclick="popup()" type="button">Export
+              <i class="fa fa-download black"></i></button>
+            </div>
+            <div class="popup-button">
+              <button class="buttons-panel__btn btn" onclick="popup()" type="button">Print
+              <i class="fa fa-print black"></i></button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="box square">
+          <p class="production-nav__title">Sales revenueby country</p>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10009022.058639247!2d12.049086191355732!3d52.23232297976066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecc859e1c7449%3A0x111ad88e3c84ee6e!2sAppsilon!5e0!3m2!1spl!2spl!4v1603289133092!5m2!1spl!2spl" width="100%" height="350" padding="10" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+        <div class="box rectangle">
+          <div class="rectangle-nav">
+            <p class="rectangle-nav__title">Summary</p>
+            <div class="rectangle-nav__icons">
+              <i class="fa fa-sync-alt"></i>
+              <i class="fa fa-times"></i>
+              <i class="fa fa-chevron-down"></i>
+          </div>
+          </div>
+          <img class="rectangle-graph" src="images/summary-graph.png" alt="Graph presents summary">
+        </div>
+        
+      </div>
+      <div class="footer-panel">
+        <div class="footer-panel__btn flex">
+          <label for="range">Range:</label>
+          <button class="range-btn" type="button" id="range" name="range">1 month &#9660</button>
+          <div class="footer-panel__menu navigation">
+             <ul class="navigation__list range-menu">
+              <li class="navigation__item">1 day</li>
+              <li class="navigation__item">1 month</li>
+              <li class="navigation__item">1 quarter</li>
+              <li class="navigation__item">1 year</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="buttons-panel">
+          <input placeholder="JUNE 2018 &#9660" class="textbox-n" type="text" onfocus="(this.type='date')" id="date">
+          <div class="popup-button">
+            <button class="buttons-panel__btn btn" onclick="popup()" type="button">Export
+            <i class="fa fa-download black"></i></button>
+          </div>
+          <div class="popup-button">
+            <button class="buttons-panel__btn btn" onclick="popup()" type="button">Print
+            <i class="fa fa-print black"></i></button>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <div class="author">
+    Challenge by <a href="https://appsilon.com/" target="_blank">Appsilon</a>.
+    Coded by <a href="https://github.com/dczerniawko">Daria Czerniawko</a>.
+  </div>
+  
+  <script src="js/main.js"></script>
+</body>
+
+</html>
