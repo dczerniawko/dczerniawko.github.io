@@ -125,7 +125,8 @@ input:checked+.slider:before {
     font-size: 1.1rem;
 }
 
-.box__price--monthly{
+.box__price--monthly,
+.box__price--annually{
     font-size: 4rem;
     margin:0;
     display: flex;
@@ -133,7 +134,7 @@ input:checked+.slider:before {
     padding: 20px 70px;
 }
 
-.box__price--annually{
+.hidden{
     display: none;
 }
 
