@@ -4,77 +4,117 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet"> 
-<link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet"> 
-<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-<link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css">
 
-<title>Frontend Mentor | Insure landing page</title>
+  <title>Frontend Mentor | Insure landing page</title>
 
 </head>
 <body>
+  <div class="wrap">
 
-  How we work
-  Blog
-  Account
-  View plans
+    <header>
+      <nav>
+        <img class="logo" src="images/logo.svg" alt="Brand logo">
+        <div class="nav__option">
+          <a class="nav__option__a" href="#">How we work</a>
+          <a class="nav__option__a" href="#">Blog</a>
+          <a class="nav__option__a" href="#">Account</a>
+          <button class="btn" type="button">View plans</button>
+        </div>
+        <div class="header__content">
+          <div class="header__content__left">
+            <h1>Humanizing your insurance.</h1>
+            <p>Get your life insurance coverage easier and faster. We blend our expertise 
+              and technology to help you find the plan that’s right for you. Ensure you 
+              and your loved ones are protected.</p>
+              <button class="btn" type="button">View plans</button>
+          </div>
+          <div class="header__content__right">
+            <img src="images/image-intro-desktop.jpg" alt="Four people holding hands and walking on the pavement">
+          </div>
+        </div>
+      </nav>
+    </header>
 
-  Humanizing your insurance.
+    <main>
+      <p class="main__title">We’re different</p>
+      <div class="main__boxes">
+        <div class="box">
+          <img class="box-img">
+          <p class="box__subtitle">Snappy Process</p>
+          <p class="box__text">Our application process can be completed in minutes, not hours. Don’t get 
+            stuck filling in tedious forms.</p>
+        </div>
+        <div class="box">
+          <img class="box-img">
+          <p class="box__subtitle">Affordable Prices</p>
+          <p class="box__text">We don’t want you worrying about high monthly costs. Our prices may be low, 
+            but we still offer the best coverage possible.</p>
+        </div>
+        <div class="box">
+          <img class="box-img">
+          <p class="box__subtitle">People First</p>
+          <p class="box__text"> Our plans aren’t full of conditions and clauses to prevent payouts. We make 
+            sure you’re covered when you need it.</p>
+        </div>
+      </div>
+    </main>
 
-  Get your life insurance coverage easier and faster. We blend our expertise 
-  and technology to help you find the plan that’s right for you. Ensure you 
-  and your loved ones are protected.
+    <section>
+      <p class="section__text">Find out more about how we work</p>
+      <button class="btn" type="button">View plans</button>
+    </section>
 
-  View plans
-
-  We’re different
-
-  Snappy Process
-
-  Our application process can be completed in minutes, not hours. Don’t get 
-  stuck filling in tedious forms.
-
-  Affordable Prices
-
-  We don’t want you worrying about high monthly costs. Our prices may be low, 
-  but we still offer the best coverage possible.
-
-  People First
-
-  Our plans aren’t full of conditions and clauses to prevent payouts. We make 
-  sure you’re covered when you need it.
-
-  Find out more about how we work
-
-  How we work
-
-  Our company
-
-  How we work
-  Why Insure?
-  View plans
-  Reviews
-
-  Help me
-
-  FAQ
-  Terms of use
-  Privacy policy
-  Cookies
-
-  Contact
-
-  Sales
-  Support
-  Live chat
-
-  Others
-
-  Careers
-  Press
-  Licenses
-
-  
+    <footer>
+      <img class="logo" src="images/logo.svg" alt="Brand logo">
+      <div class="socials">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-pinterest"></i>
+        <i class="fab fa-instagram"></i>
+      </div>
+      <div class="footer__columns">
+        <div class="footer__column">
+          <ul>
+            <li class="opacity">Our company</li>
+            <li>How we work</li>
+            <li>Why Insure?</li>
+            <li>View plans</li>
+            <li>Reviews</li>
+          </ul>
+        </div>
+        <div class="footer__column">
+          <ul>
+            <li class="opacity">Help me</li>
+            <li>FAQ</li>
+            <li>Terms of use</li>
+            <li>Privacy policy</li>
+            <li>Cookies</li>
+          </ul>
+        </div>
+        <div class="footer__column">
+          <ul>
+            <li class="opacity">Contact</li>
+            <li>Sales</li>
+            <li>Support</li>
+            <li>Live chat</li>
+          </ul>
+        </div>
+        <div class="footer__column">
+          <ul>
+            <li class="opacity">Others</li>
+            <li>Careers</li>
+            <li>Press</li>
+            <li>Licenses</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
   <div class="author">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="https://github.com/dczerniawko">Daria Czerniawko</a>.
