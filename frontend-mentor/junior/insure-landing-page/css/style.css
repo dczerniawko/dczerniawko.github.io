@@ -1,4 +1,3 @@
-
 :root {
     /* PRIMARY */
     --dark-violet: hsl(256, 26%, 20%);
@@ -16,18 +15,133 @@
 
 body {
     max-width: 1440px;
+    margin: 1.5rem auto;
     font-family: 'Karla', sans-serif;
-    font-family: 'DM Serif Display', serif;
     font-size: 16px;
 }
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+  }
+
+.nav__option__a {
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.logo,
+.main__title {
+    padding: 10px 200px;
+}
+
+.btn {
+    height: 40px;
+    border: 1px solid black;
+    padding-left: 40px;
+    padding-right: 40px;
+    cursor: pointer;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.header__content {
+    color: var(--very-light-gray);
+    background-color: var(--dark-violet);
+    display: flex;
+    align-items: center;
+    height: 650px;
+    position: relative;
+    margin: 50px 0 300px 0;
+}
+
+.header__content__left {
+    width: 50%;
+    padding: 0 100px;
+}
+
+h1,
+.main__title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 3.5rem;
+}
+
+.header__text{
+    margin: 0 0 30px 0;
+    opacity: .8;
+    line-height: 25px;
+}
+
+.header__content__left .btn{
+    border-color: white;
+    color: white;
+    letter-spacing: 2px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+  
+.header__content__right {
+    position: inherit;
+    top: 20%;
+    width: 50%;
+}
+  
+.header__content__right img {
+    width: 80%;
+}
+
+.header__background-left {
+    position: absolute;
+    left: 0;
+    top: 75%;
+}
+
+.header__background-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.main__title {
+    padding: 10px 100px;
+}
+
+.main__boxes{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 100px;
+}
+
+.box{
+    width: 30%;
+    opacity: .7;
+    line-height: 25px;
+}
+
+.box__subtitle{
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+
+
+  
+
 
 .author { 
     font-size: 11px; 
     text-align: center; 
 }
+
 .author a { 
     color: hsl(228, 45%, 44%); 
 }
+
 @media (max-width: 600px) {
 
     .hamburger, .navigation {
