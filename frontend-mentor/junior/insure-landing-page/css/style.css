@@ -49,6 +49,12 @@ nav {
     background-color: transparent;
     text-transform: uppercase;
     font-weight: 700;
+    transition: .3s;
+}
+
+nav .btn:hover{
+    background-color: var(--very-dark-violet);
+    color: white;
 }
 
 
@@ -93,6 +99,11 @@ h1::before{
     letter-spacing: 2px;
     padding-left: 30px;
     padding-right: 30px;
+}
+
+.header__content__left .btn:hover{
+    background-color: white;
+    color: black;
 }
   
 .header__content__right {
@@ -172,6 +183,11 @@ section .btn {
     border-color: white;
     color: white;
     margin: auto;
+}
+
+section .btn:hover{
+    background-color: white;
+    color: black;
 }
 
 footer{
