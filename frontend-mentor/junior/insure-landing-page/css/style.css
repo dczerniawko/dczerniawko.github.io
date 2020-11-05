@@ -169,7 +169,7 @@ h1::before {
     font-weight: 700;
 }
 
-section {
+.section {
     background-image: url("../images/bg-pattern-how-we-work-desktop.svg");
     background-repeat: no-repeat;
     background-position: right;
@@ -189,13 +189,13 @@ section {
     width: 40%;
 }
 
-section .btn {
+.section .btn {
     border-color: white;
     color: white;
     margin: auto;
 }
 
-section .btn:hover {
+.section .btn:hover {
     background-color: white;
     color: black;
 }
@@ -404,7 +404,7 @@ li {
         font-weight: 700;
     }
 
-    section {
+    .section {
         background-image: url("../images/bg-pattern-how-we-work-mobile.svg");
         background-position: top right;
         flex-direction: column;

@@ -74,21 +74,16 @@
   margin-right: 2%;
 }
 
-.socials__fb a,
-.socials__tw a,
-.socials__in a {
+.fab {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid white;
+  border-radius: 50px;
+  margin-left: 15px;
   color: white;
-  text-decoration: none;
-  margin: 20px;
-  font-size: 14px;
-  padding: 10px;
-  border-radius: 50%;
-  box-shadow: 0 0 0 1px white;
-}
-
-.socials__fb a {
-  padding-left: 12px;
-  padding-right: 12px;
 }
 
 .footer__end__attribution {
