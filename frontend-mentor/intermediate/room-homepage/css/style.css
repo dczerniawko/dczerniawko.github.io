@@ -1,0 +1,38 @@
+:root {
+    --dark-gray: hsl(0, 0%, 63%);
+    --black: hsl(0, 0%, 0%);
+    --white: hsl(0, 0%, 100%);
+    --very-dark-gray: hsl(0, 0%, 27%);
+}
+  
+* {
+    margin: auto;
+    padding: 0;
+    font-family: 'Spartan', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1440px;
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+.author { 
+    font-size: 11px; text-align: center; 
+}
+.author a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (max-width: 600px) {
+    body {
+      min-width: 375px;
+      overflow-x: hidden;
+    }
+}
