@@ -15,54 +15,58 @@
 body {
     max-width: 1440px;
     font-size: 12px;
-    padding: 10px;
-    margin: auto;
 }
 
-.row-top__left__img{
-    height: 100%;
-    min-width: 100%;
-    overflow: hidden;
+.wrap {
+    display: grid;
+    grid-template-rows: 70vh 30vh;
 }
 
 .row-top{
-    max-height: 530px;
-}
-
-.row-top,
-.row-bottom{
-    display: flex;
-}
-
-.row-top__left{
-    position: relative;
+    display: grid;
+    grid-template-columns: 60% 40%;
 }
 
 nav {
     position: absolute;
     display: flex;
-    padding: 3em 5em;
+    padding: 3rem;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    margin-left: 2rem;
 }
 
 .nav__option {
-    margin-left: 5em;
-}
-
-.nav__option__a {
     text-decoration: none;
+    list-style: none;
     padding: 2.5em;
     color: white;
     cursor: pointer;
 }
 
-.row-top__right{
-    padding: 80px 150px;
+.row-top__left__img{
+    display: flex;
+}
+
+.row-top__left__img img {
+    height: 100%;
+    width: 100%;
+}
+
+.row-top__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 5rem;
     position: relative;
-    min-width: 50%;
 }
 
 h1{
-    padding: 30px 0;
+    padding: 3rem 0;
     font-size: 2rem;
 }
 
@@ -78,7 +82,6 @@ h1{
     text-transform: uppercase;
     letter-spacing: 10px;
     font-weight: 500;
-    font-size: .9rem;
     margin: 30px 0;
 }
 
@@ -88,7 +91,7 @@ h1{
     border: none;
     padding: 30px;
     position: absolute;
-    left: 10.5%;
+    left: 10%;
     bottom: 0;
     cursor: pointer;
 }
@@ -97,30 +100,14 @@ h1{
     left:0;
 }
 
-.row-bottom__left,
-.row-bottom__right {
-   width: 40%;
+.row-bottom{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
 }
 
-.row-bottom__middle{
-    width: 50%;
-}
 
-.row-bottom__left img,
-.row-bottom__right img{
-   width: 100%;
-}
 
-.row-bottom__middle{
-    padding: 6em 3em;
-}
 
-.row-bottom__middle__title{
-    letter-spacing: 10px;
-    text-transform: uppercase;
-    font-weight: 700;
-    margin-bottom: 15px;
-}
 
 .author { 
     font-size: 11px; 
