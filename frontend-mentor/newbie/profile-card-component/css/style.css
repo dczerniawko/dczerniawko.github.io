@@ -1,0 +1,96 @@
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+}
+  
+* {
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1440px;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    background-color: var(--dark-cyan);
+    background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
+    background-position: top -10rem left -20rem, bottom -50rem right -10rem;
+    background-repeat: no-repeat;
+}
+
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+}
+
+.header {
+    margin-top: 30vh;
+}
+
+.background {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.middle{
+    background-color: white;
+    width: 100%;
+    margin-top: -5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 90px 0 30px 0;
+    position: relative;
+}
+
+.avatar{
+    position: absolute;
+    top: -20%;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.footer {
+    border-top: 1px solid rgb(204, 203, 203);
+    background-color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 25px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: center;
+}
+
+.column,
+.name {
+    font-weight: 700;
+}
+
+span,
+.city {
+    opacity: .6;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.footer__span {
+    display: block;
+    font-size: .9rem;
+}
+
+.author { 
+    font-size: 11px; 
+    text-align: center; 
+    padding: 20px;
+}
+
+.author a { 
+    color: hsl(228, 45%, 44%); 
+    text-decoration: none;
+}
