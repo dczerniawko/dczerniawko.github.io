@@ -15,11 +15,13 @@
 body {
     max-width: 1440px;
     font-size: 12px;
+    margin: auto;
 }
 
 .wrap {
     display: grid;
     grid-template-rows: 70vh 30vh;
+    overflow: hidden;
 }
 
 .row-top{
@@ -27,10 +29,24 @@ body {
     grid-template-columns: 60% 40%;
 }
 
+.row-top__left {
+    display: grid;
+    
+}
+
+.row-top__left_img {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    object-fit: cover;
+}
+
 nav {
     position: absolute;
     display: flex;
     padding: 3rem;
+    z-index: 1;
+    top: 0;
 }
 
 ul {
@@ -45,15 +61,6 @@ ul {
     padding: 2.5em;
     color: white;
     cursor: pointer;
-}
-
-.row-top__left__img{
-    display: flex;
-}
-
-.row-top__left__img img {
-    height: 100%;
-    width: 100%;
 }
 
 .row-top__right {
