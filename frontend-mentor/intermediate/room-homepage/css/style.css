@@ -163,7 +163,12 @@ h1{
     text-decoration: none;
 }
 
-@media (max-width: 850px) {
+.hamburger,
+.navigation{
+    display: none;
+}
+
+@media (max-width: 900px) {
 
     body {
       min-width: 375px;
@@ -182,12 +187,71 @@ h1{
 
     .prev-btn, .next-btn {
         position: absolute;
-        left: 85%;
+        left: 83%;
         bottom: 100%;
-        padding: 20px;
+        padding: 15px;
     }
 
     .next-btn {
         left: 90%;
     }
+
+    .hamburger {
+        position: absolute;
+        top: 0;
+        margin: 30px;
+        left: 85%;
+        display: inline-block;
+        z-index: 1;
+        cursor: pointer;
+        background-color: transparent;
+        border: 0;
+    }
+
+    .hamburger, .navigation {
+        transition: transform .3s .1s ease-in-out;
+    }
+
+    .hamburger--active {
+        transform: translateX(-150px);
+    }
+
+    .navigation {
+        display: block;
+        height: 25vh;
+        width: 150px;
+        background-color: white;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translateX(200px);
+        z-index: 1;
+      }
+      
+    .navigation--active {
+        transform: translateX(0px);
+    }
+      
+    .navigation__list {
+        position: absolute;
+        margin-top: 25px;
+        margin-left: 10px;
+        text-align: left;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+      
+    .navigation__item {
+        margin: 20px 10px;
+        margin-bottom: 20px;
+        cursor: pointer;
+    }
+
+    nav{
+        display: none;
+    }
+
 }
