@@ -1,0 +1,68 @@
+.popup-content {
+    position: absolute;
+    top: -30%;
+    left: 40%;
+    width: 270px;
+    height: 250px;
+    background: #220538;
+    border: 2px solid #f5f5f5;
+    box-sizing: border-box;
+    border-radius: 4px;
+    color: white;
+    padding: 10px;
+}
+
+.popup-overlay {
+    backdrop-filter: blur(20px);
+    background: rgba(28, 4, 46, 0.55);
+}
+
+.cart {
+    width: 32px;
+    height: 32px;
+    filter: brightness(0) invert(1);
+    cursor: pointer;
+}
+
+.inside {
+    position: absolute;
+    left: 30%;
+    bottom: -45%;
+    font-family: Roboto;
+    font-size: 8px;
+    color: white;
+}
+
+.submit {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    border-radius: 4px;
+    border: none;
+    background-color: #ab528d;
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 5px 20px;
+    transition: 0.4s ease;
+}
+
+.submit:hover {
+    background-color: #f963c5;
+    cursor: pointer;
+}
+
+.div {
+    position: relative;
+    width: 12px;
+    height: 13px;
+    left: 70%;
+    top: -60%;
+    background-color: #ab528d;
+    border-radius: 50%;
+}
+
+.btn {
+    background-color: transparent;
+    border: none;
+}

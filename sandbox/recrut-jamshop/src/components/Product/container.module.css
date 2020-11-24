@@ -1,0 +1,57 @@
+.img {
+    width: 500px;
+    height: 500px;
+}
+
+.title {
+    color: white;
+    font-size: 2em;
+    font-family: "Roboto";
+    font-weight: bold;
+}
+
+.section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10em;
+    height: 90vh;
+}
+
+.kind {
+    color: #e7ce5f;
+    text-transform: uppercase;
+    font-family: "Roboto";
+}
+
+.text {
+    color: white;
+    opacity: 0.7;
+    font-size: 1.3em;
+    max-width: 450px;
+    font-family: "Roboto";
+}
+
+.price {
+    color: white;
+    font-size: 1.5em;
+    font-weight: 700;
+    font-family: "Roboto";
+}
+
+.btn {
+    border-radius: 5px;
+    border: none;
+    background-color: #ab528d;
+    color: white;
+    font-size: 0.9rem;
+    height: 40px;
+    padding: 0 40px;
+    transition: 0.4s ease;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background-color: #f963c5;
+    cursor: pointer;
+}

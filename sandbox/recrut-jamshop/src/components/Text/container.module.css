@@ -1,0 +1,24 @@
+.section {
+    padding: 4em 8em;
+    font-family: "Roboto";
+}
+
+.title {
+    position: absolute;
+    left: 130px;
+    top: 77%;
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: #eeeeee;
+}
+
+.subtitle {
+    position: absolute;
+    width: 370px;
+    left: 130px;
+    top: 85%;
+    font-family: Montserrat;
+    font-size: 0.9rem;
+    color: #c4c4c4;
+}

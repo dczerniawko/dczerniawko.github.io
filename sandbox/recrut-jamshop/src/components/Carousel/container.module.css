@@ -1,0 +1,65 @@
+.main {
+    position: absolute;
+    width: 95vw;
+    margin: auto 30px;
+    left: 0px;
+    top: 90%;
+}
+
+.box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 265px;
+    width: 260px;
+    cursor: pointer;
+    background: #331f41;
+    border: 3px solid #969393;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+
+.img{
+    position: absolute;
+    top: 10%;
+}
+
+.title{
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #eee;
+    left: 12%;
+}
+
+.subtitle {
+    position: absolute;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    color: #c4c4c4;
+    top: 60%;
+    padding: 10px 30px;
+}
+
+.btn{
+    border-radius: 50%;
+    border: none;
+    color: white;
+    position: absolute;
+    top: 85%;
+    right: 5%;
+    padding: 5px 10px;
+    background: #ab528d;
+    transition: 0.4s ease;
+}
+
+.btn:hover{
+    background-color: #f963c5;
+    cursor: pointer;
+}

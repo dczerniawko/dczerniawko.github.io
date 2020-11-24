@@ -1,0 +1,41 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 4em;
+}
+
+.link {
+    font-size: 1.5em;
+    color: white;
+    text-decoration: none;
+}
+
+.a {
+    position: absolute;
+    left: 60px;
+    top: 20px;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #e4e3e3;
+}
+
+.btn {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+.btn:active{
+    transform: scaleY(-1);
+}
+
+.arrow {
+    color: white;
+    margin: 10px;
+}
+
+.right {
+    display: flex;
+}
