@@ -6,8 +6,8 @@
 .title {
     position: absolute;
     left: 130px;
-    top: 77%;
-    font-family: Montserrat;
+    top: 60%;
+    font-family: 'Montserrat';
     font-weight: bold;
     font-size: 1.8rem;
     color: #eeeeee;
@@ -17,8 +17,8 @@
     position: absolute;
     width: 370px;
     left: 130px;
-    top: 85%;
-    font-family: Montserrat;
+    top: 65%;
+    font-family: 'Montserrat';
     font-size: 0.9rem;
     color: #c4c4c4;
 }
