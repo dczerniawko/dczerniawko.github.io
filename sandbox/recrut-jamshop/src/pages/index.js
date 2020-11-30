@@ -7,6 +7,8 @@ import Hero from "../components/Hero"
 import Text from "../components/Text"
 import Carousel from "../components/Carousel"
 
+import { graphql } from "gatsby"
+
 import HeroBackground from "../assets/elements/hero_background.svg"
 
 const StyledWrapper = styled.div`
@@ -18,7 +20,7 @@ const StyledWrapper = styled.div`
   background-position: top 0 right 0;
 `
 
-export default function IndexPage() {
+export default function IndexPage({ data }) {
   return (
     <>
       <StyledWrapper>
@@ -26,9 +28,31 @@ export default function IndexPage() {
           <SEO title="Home" />
           <Hero />
           <Text />
-          <Carousel />
+          <Carousel data={data} />
         </Layout>
       </StyledWrapper>
     </>
   )
 }
+
+export const query = graphql`
+  query {
+    allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "/src/products/g" } }
+      skip: 1
+    ) {
+      edges {
+        node {
+          frontmatter {
+            image
+            name
+            price
+            title
+            description
+            excerpt
+          }
+        }
+      }
+    }
+  }
+`

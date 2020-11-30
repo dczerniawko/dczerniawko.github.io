@@ -3,7 +3,7 @@ import Popup from "reactjs-popup"
 import styled from "styled-components"
 import containerStyles from "./container.module.css"
 
-import ShopBasket from "../../assets/products/shopping-basket.svg"
+import ShopBasket from "../../assets/images/shopping-basket.svg"
 
 const PopupStyled = styled(Popup)`
   &-content {

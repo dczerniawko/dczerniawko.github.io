@@ -1,11 +1,15 @@
 import React from "react"
 import ElasticCarousel from "react-elastic-carousel"
-import { Link } from "gatsby"
+import { Link, graphql } from "gatsby"
 
-import capsheaf from "../../assets/products/dumy.svg"
 import containerStyles from "./container.module.css"
 
-export default function Carousel() {
+function addToCart(e) {
+  console.log(e.target)
+}
+
+export default function Carousel(data) {
+  console.log(data)
   const breakPoints = [
     { width: 500, itemsToShow: 1 },
     { width: 768, itemsToShow: 2 },
@@ -15,76 +19,24 @@ export default function Carousel() {
   return (
     <div className={containerStyles.main}>
       <ElasticCarousel breakPoints={breakPoints}>
-        <Link to="/product">
-          <div className={containerStyles.box}>
-            <img
-              className={containerStyles.img}
-              src={capsheaf}
-              alt="capsheaf "
-            />
-            <h1 className={containerStyles.title}>great dummy</h1>
-            <p className={containerStyles.subtitle}>
-              Something that you trully need, but haven't know about it yet
-            </p>
-            <button className={containerStyles.btn}>+</button>
+        {data.data.allMarkdownRemark.edges.map(({ node }) => (
+          <div key={node.id}>
+            <div className={containerStyles.box}>
+              <img
+                className={containerStyles.img}
+                src={node.frontmatter.image}
+                alt="capsheaf "
+              />
+              <h1 className={containerStyles.title}>{node.frontmatter.name}</h1>
+              <p className={containerStyles.subtitle}>
+                {node.frontmatter.excerpt}
+              </p>
+              <button onClick={addToCart} className={containerStyles.btn}>
+                +
+              </button>
+            </div>
           </div>
-        </Link>
-        <Link to="/product">
-          <div className={containerStyles.box}>
-            <img
-              className={containerStyles.img}
-              src={capsheaf}
-              alt="capsheaf "
-            />
-            <h1 className={containerStyles.title}>basic dummy</h1>
-            <p className={containerStyles.subtitle}>
-              Something that you trully need, but haven't know about it yet
-            </p>
-            <button className={containerStyles.btn}>+</button>
-          </div>
-        </Link>
-        <Link to="/product">
-          <div className={containerStyles.box}>
-            <img
-              className={containerStyles.img}
-              src={capsheaf}
-              alt="capsheaf "
-            />
-            <h1 className={containerStyles.title}>dummy x pro</h1>
-            <p className={containerStyles.subtitle}>
-              Something that you trully need, but haven't know about it yet
-            </p>
-            <button className={containerStyles.btn}>+</button>
-          </div>
-        </Link>
-        <Link to="/product">
-          <div className={containerStyles.box}>
-            <img
-              className={containerStyles.img}
-              src={capsheaf}
-              alt="capsheaf "
-            />
-            <h1 className={containerStyles.title}>wooden dummy</h1>
-            <p className={containerStyles.subtitle}>
-              Something that you trully need, but haven't know about it yet
-            </p>
-            <button className={containerStyles.btn}>+</button>
-          </div>
-        </Link>
-        <Link to="/product">
-          <div className={containerStyles.box}>
-            <img
-              className={containerStyles.img}
-              src={capsheaf}
-              alt="capsheaf "
-            />
-            <h1 className={containerStyles.title}>daria dummy</h1>
-            <p className={containerStyles.subtitle}>
-              Someone, who didn't used Frigma
-            </p>
-            <button className={containerStyles.btn}>+</button>
-          </div>
-        </Link>
+        ))}
       </ElasticCarousel>
     </div>
   )

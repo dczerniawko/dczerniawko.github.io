@@ -24,6 +24,7 @@
 .img{
     position: absolute;
     top: 10%;
+    width: 50%;
 }
 
 .title{
@@ -33,7 +34,7 @@
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #eee;
     left: 12%;
 }
